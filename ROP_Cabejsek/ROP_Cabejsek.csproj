@@ -64,6 +64,12 @@
     <Compile Include="FormularCSharp.Designer.cs">
       <DependentUpon>FormularCSharp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Priklady.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Priklady.Designer.cs">
+      <DependentUpon>Priklady.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularCSharp.resx">
       <DependentUpon>FormularCSharp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Priklady.resx">
+      <DependentUpon>Priklady.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

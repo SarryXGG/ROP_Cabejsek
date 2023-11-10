@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace ROP_Cabejsek
 {
-    public partial class FormularCPP : Form
+    public partial class Priklady : Form
     {
-        public FormularCPP()
+        public Priklady()
         {
             InitializeComponent();
         }
 
-        private void FormularCPP_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void FormularCPP_FormClosed(object sender, FormClosedEventArgs e)
+        private void Priklady_Load(object sender, EventArgs e)
         {
-            this.Visible = false;
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label17_Click(object sender, EventArgs e)
         {
 
         }
