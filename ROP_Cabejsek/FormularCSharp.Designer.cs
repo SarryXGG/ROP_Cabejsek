@@ -206,6 +206,7 @@
             this.Name = "FormularCSharp";
             this.Text = "FormularCSharp";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormularCSharp_FormClosed);
+            this.Load += new System.EventHandler(this.FormularCSharp_Load);
             this.ResumeLayout(false);
 
         }

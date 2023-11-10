@@ -67,7 +67,7 @@
             this.label2.Location = new System.Drawing.Point(12, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 16);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 21;
             this.label2.Text = "Příklad";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -78,7 +78,7 @@
             this.label3.Location = new System.Drawing.Point(12, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 16);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 22;
             this.label3.Text = "Příklad";
             // 
             // label4
@@ -98,7 +98,7 @@
             this.label5.Location = new System.Drawing.Point(12, 190);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 16);
-            this.label5.TabIndex = 5;
+            this.label5.TabIndex = 23;
             this.label5.Text = "Příklad";
             // 
             // label6
@@ -118,7 +118,7 @@
             this.label7.Location = new System.Drawing.Point(12, 270);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(49, 16);
-            this.label7.TabIndex = 7;
+            this.label7.TabIndex = 24;
             this.label7.Text = "Příklad";
             // 
             // label8
@@ -138,7 +138,7 @@
             this.label9.Location = new System.Drawing.Point(12, 350);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(49, 16);
-            this.label9.TabIndex = 9;
+            this.label9.TabIndex = 25;
             this.label9.Text = "Příklad";
             // 
             // label10
@@ -158,7 +158,7 @@
             this.label11.Location = new System.Drawing.Point(12, 430);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(49, 16);
-            this.label11.TabIndex = 11;
+            this.label11.TabIndex = 26;
             this.label11.Text = "Příklad";
             // 
             // label12
@@ -178,7 +178,7 @@
             this.label13.Location = new System.Drawing.Point(12, 510);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(49, 16);
-            this.label13.TabIndex = 13;
+            this.label13.TabIndex = 27;
             this.label13.Text = "Příklad";
             // 
             // label14
@@ -198,7 +198,7 @@
             this.label15.Location = new System.Drawing.Point(12, 590);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(49, 16);
-            this.label15.TabIndex = 15;
+            this.label15.TabIndex = 28;
             this.label15.Text = "Příklad";
             // 
             // label16
@@ -218,7 +218,7 @@
             this.label17.Location = new System.Drawing.Point(12, 670);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(49, 16);
-            this.label17.TabIndex = 17;
+            this.label17.TabIndex = 29;
             this.label17.Text = "Příklad";
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
@@ -239,7 +239,7 @@
             this.label19.Location = new System.Drawing.Point(12, 750);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(49, 16);
-            this.label19.TabIndex = 19;
+            this.label19.TabIndex = 30;
             this.label19.Text = "Příklad";
             // 
             // label20
@@ -287,25 +287,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label label10;
+        public System.Windows.Forms.Label label11;
+        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.Label label16;
+        public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.Label label18;
+        public System.Windows.Forms.Label label19;
+        public System.Windows.Forms.Label label20;
     }
 }

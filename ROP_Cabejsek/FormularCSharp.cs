@@ -26,5 +26,10 @@ namespace ROP_Cabejsek
         {
             this.Visible = false;
         }
+
+        private void FormularCSharp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
