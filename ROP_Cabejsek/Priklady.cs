@@ -14,7 +14,9 @@ namespace ROP_Cabejsek
     {
         public Priklady()
         {
+         
             InitializeComponent();
+
         }
 
         private void label2_Click(object sender, EventArgs e)
