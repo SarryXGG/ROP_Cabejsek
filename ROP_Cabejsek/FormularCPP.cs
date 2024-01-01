@@ -20,6 +20,10 @@ namespace ROP_Cabejsek
             InitializeComponent();
         }
 
+        private void vypsaniPrikladu()
+        { 
+        }
+
         private void FormularCPP_Load(object sender, EventArgs e)
         {
 
@@ -43,27 +47,34 @@ namespace ROP_Cabejsek
                     s = sr.ReadToEnd();
                     sts = s.Split('/');
 
-                    int verticalSpacing = 18; // Vertikální mezera mezi labely
+                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
                     int currentTop = 10; // Počáteční vertikální pozice
 
                     for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i+1);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
                         formPriklady.Controls.Add(labelNazev);
                         currentTop += verticalSpacing;
 
-                        Label label = new Label();
-                        label.Text = sts[i];
-                        label.AutoSize = true;
-                        label.Width = 1;
-                        label.Top = currentTop;
 
-                        formPriklady.Controls.Add(label);
-                        currentTop += label.Height + verticalSpacing;
+                        TextBox tb = new TextBox();
+                        tb.Multiline = true; // Použití víceřádkového textového pole
+                        tb.ScrollBars = ScrollBars.Vertical; // Přidání svislého skrolování, pokud text přesahuje
+                        tb.Text = sts[i];
+
+                        // Nastavení šířky textového pole na šířku formuláře s odčtením mezery (např. 20)
+                        tb.Width = formPriklady.ClientSize.Width - 20;
+
+                        tb.Height = 60; // Nastavení výšky textového pole
+                        tb.Top = currentTop;
+                        tb.ReadOnly = true;
+
+                        formPriklady.Controls.Add(tb);
+                        currentTop += tb.Height + verticalSpacing;
                     }
                 }
 
