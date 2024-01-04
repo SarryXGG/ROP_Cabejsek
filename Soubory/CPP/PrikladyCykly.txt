@@ -1,0 +1,8 @@
+Algoritmus musí být především správný (splňuje 3 vlastnosti probrané dříve), ale měl by splňovat i následující cíle: Přehlednost, Snadná modifikovatelnost (změny v algoritmu samotném nebo použití algoritmu (ať už celého nebo části) v jiném algoritmu), Snadná verifikovatelnost (ověření správnosti).
+V krabičce Penicilínu je 30 tablet. Pacient má užívat vždy jednu tabletu po 6-ti hodinách, má využívat celé balení. Nakreslete vývojový diagram s návodem pro pacienta.
+Na vstupu je celé číslo n. Vypište na obrazovku n řádků po 3 *. 1. způsob a) – počítejte, kolik řádků jste už vypsali 2. způsob b) – v proměnné n si udržujte počet řádků, které ještě máte vypsat.
+Na vstupu je celé kladné číslo a a celé nezáporné číslo n. Spočtěte mocninu an pomocí násobení.
+Na vstupu jsou dvě přirozená čísla a, b. Spočtěte jejich součin pomocí sčítání.
+Na vstupu je celé nezáporné číslo n. Spočtěte jeho faktoriál n!
+Spočtěte součet všech celých čísel od 150 do 200 včetně.
+Na vstupu jsou dvě celá čísla a, b. Spočtěte součin všech celých čísel od a do b včetně.

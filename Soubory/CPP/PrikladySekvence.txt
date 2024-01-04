@@ -1,0 +1,7 @@
+Algoritmem rozumíme posloupnost operací, která pro přípustná vstupní data vede po konečném počtu kroků k odpovídajícím výsledkům. Algoritmus musí mít tyto 3 vlastnosti: Obecnost, Determinovat, Rezultativnost. Typy zapisů: Grafický, Odborný, Programovací.    Vstupní a výstupný operace cin a cout  cout << 22; - vypíše celé číslo 22  cin >> a; zapíše do proměnné zadanou hodnotu
+Na vstupu je číslo a představující stranu čtverce v cm. Spočtěte a vypište obvod a obsah čtverce.
+Na vstupu jsou 3 celá čísla a, b, c. Spočtěte a vypište jejich aritmetický průměr.
+Na vstupu je číslo r představující poloměr kruhu v dm. Spočtěte obvod kruhu v m a obsah kruhu v cm2. Oba výsledky vypište.
+Pole má tvar pravoúhlého trojúhelníka.  Na vstupu jsou délky odvěsen pole v metrech. Spočítejte délku třetí strany pole (přepona) v km.
+Spočítejte vzdálenost dvou bodů v rovině, jsou-li dány souřadnice každého z nich.
+Na vstupu je poloměr a hloubka kruhového zahradního bazénu obojí zadané v centimetrech. Kolik metů krychlových vody se vejde do bazénu, je-li naplněn 10 cm pod okraj?
