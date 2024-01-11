@@ -1,0 +1,5 @@
+Příkaz switch v C++ funguje jako přepínač, který říká, jaký řádek programového kódu se má dále provést. Program skáče na řádek, který je označen hodnotou odpovídající hodnotě v zavorkách.
+Uživatel zadá známku (0, 1, 2,  3, 4, 5), program vypíše slovní hodnocení.
+Uživatel zadá číslo měsíce (1..12), program vypíše název měsíce.
+Uživatel zadá číslo měsíce (1..12), program vypíše všechny měsíce do konce kalendářního roku.
+Program vypíše text ve tvaru: s – snidane, o – obed, v – vecere, z – zadne jidlo, konec. Zvol jedno jidlo nebo konec. Program načte uživatelovu volbu a vypíše, jaké jídlo si objednal, případně napíše, že si žádné jídlo neobjednal.

@@ -1,0 +1,7 @@
+Definice funkce obsahuje samotný kód, který specifikuje, co funkce dělá. Tato část obsahuje návratový typ, název funkce, seznam parametrů a kód k provedení, Parametry jsou hodnoty, které jsou předávány funkci při jejím volání. Funkce může mít nula až n parametrů. Parametry slouží k předávání informací dovnitř funkce, aby mohla pracovat s konkrétními hodnotami, Volání funkce se provádí pomocí jejího názvu a předání odpovídajících argumentů (hodnot nebo proměnných) na místo parametrů. Volání může být součástí výrazu nebo samostatné příkazy.
+Napište funkci hvezdicky, která na řádek vypíše zadaný počet hvězdiček. Napište funkci znaky, která na řádek vypíše zadaný počet zadaného znaku. Napište funkci radkyHvezdicek, která vypíše zadaný počet hvězdiček na zadaný počet řádků. Funkce zavolejte v programu v sekvenci za sebou
+Napište funkci prumer3, která vrací aritmetický průměr ze tří reálných čísel. Napište funkci jeLiche, která zjistí, zda zadané celé číslo je liché. Napište funkci jePismeno, která zjistí, zda zadaný znak je písmeno. Všechny funkce zavolejte v programu.
+Napište funkci obsahujeLichCifru, která zjistí, zda zadané celé kladné číslo obsahuje nějakou lichou cifru.
+Napište funkci soucetDelitelu, která pro celé kladné číslo vrátí součet všech jeho dělitelů.
+Napište funkci prvocislo, která pro zadané celé kladné číslo zjistí, zda se jedná o prvočíslo.
+Napište funkci cifSoucet, která pro celé kladné číslo zjistí jeho ciferný součet, součet lichých cifer a součet sudých cifer. Funkci cifSoucet zavolejte v programu.

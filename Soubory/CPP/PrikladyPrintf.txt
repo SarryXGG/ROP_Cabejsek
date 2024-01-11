@@ -1,0 +1,5 @@
+Printf slouží k formátovanému výstupu textu. Funkce vrací počet zapsaných znaků, v případě chyby vrací hodnotu -1. Funkce scanf() se používá pro formátovaný standardní vstup, což bývá obvykle vstup z klávesnice. Deklarace funkce scanf() vypadá takto:
+Na vstupu je celé kladné číslo x. Spočítejte aritmetický průměr jeho cifer. Průměr zaokrouhlete na 3 desetinná místa. Program vypíše text ve tvaru: „Aritmetický průměr cifer čísla x je …“.
+Načtěte číslo1 operátor číslo2 a vypočítejte. Číslo1 a číslo2 jsou celá čísla. Operátor je +,-,*,/. Výsledek vypište ve tvaru např. „číslo1 + číslo2 = výsledek“. Pro dělení výsledek zaokrouhlete na dvě desetinná místa, pro ostatní operace výsledek nebude mít žádné desetinné místo.¨
+Načtěte číslo x, vypište zprávu Číslo x je sudé. Číslo x je liché. Nepoužívejte příkaz if ani pomocnou proměnnou pro výsledek.
+Na vstupu je dáno datum narození ve tvaru d.m.rrrr a aktuální datum ve stejném formátu. Vypište „Datum narozeni: d.m.rrrr, vek: x let“. Věk spočtěte přesně na den.

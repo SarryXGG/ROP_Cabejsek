@@ -1,0 +1,7 @@
+Máme-li na vstupu posloupnost zakončenou hodnotou, musíme znát zakončovací hodnotu. Tuto zakončovací hodnotu musíme také načíst, ale je to jen „znamení“, že je vstup u konce, nesmíme ji zpracovat stejným způsobem jako prvky posloupnosti.
+Na vstupu je posloupnost nenulových čísel zakončená nulou. Spočtěte součin všech prvků posloupnosti.
+Na vstupu je posloupnost kladných čísel zakončená číslem záporným. Spočtěte součet prvků posloupnosti. Nechte uživatele zvolit, jakým typem cyklu bude součet spočítán. – cyklem while, do while a for.
+Na vstupu je posloupnost celých lichých čísel zakončená číslem sudým. Určete aritmetický průměr druhých odmocnin všech kladných prvků posloupnosti.
+Na vstupu je posloupnost kladných reálných čísel zakončená číslem záporným. Načtěte minimálně dva prvky. Vypište druhý nejmenší prvek a jeho pořadí.
+Na vstupu je posloupnost nenulových čísel zakončená nulou. Vypište maximum posloupnosti a jeho pořadí v posloupnosti. Pokud je těchto hodnot více, vypište pořadí posledního z nich, dále vypište i kolikrát se v posloupnosti maximum vyskytuje. Vypište minimum posloupnosti a jeho pořadí v posloupnosti. Pokud je těchto hodnot více, vypište pořadí prvního z nich, dále vypište i kolikrát se v posloupnosti minimum vyskytuje.
+
