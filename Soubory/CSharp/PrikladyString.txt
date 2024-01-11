@@ -1,0 +1,6 @@
+Instance hodnotových typů (proměnné) jsou ukládány na zásobník programu a program s nimi pracuje přímo. Hodnotové proměnné obsahují pouze hodnotu bez dalších doplňujících informací. Hodnotové typy jsou v jazyce CSharp primitivní datové typy (celočíselné a reálné), struktury a výčtové typy. Referenční datové typy neuchovávají hodnotu samotnou, ale pouze odkaz na místo v paměti (halda), kde je skutečná instance uložena.
+V zadaném řetězci zjistěte počet malých písmen, počet velkých písmen, počet číslic a počet jiných znaků.
+V textBox1 je zapsán řetězec. Button1: Z řetězce vypusťte všechna velká písmena anglické abecedy (napište cyklus). Button2: Z řetězce smažte všechny hvězdičky (použijte metodu). Button3: Z řetězce odstraňte všechny nadbytečné mezery.
+V řetězci, kde slova jsou oddělena libovolným počtem mezer, najděte nejdelší a nejkratší slovo. Vypište je i spolu s jejich délkou. Prázdná slova (když je více mezer za sebou) neuvažujte.(Pokud je více nejdelších nebo nejkratších slov, není řečeno, které z nich máte vypsat)
+V textBox1 je zapsána aritmetická operace s reálnými čísly ve tvaru: “208*10” nebo “100-15” apod. Mezi operandy a operátory není žádná mezera. Po stisku tlačítka spočtěte příslušnou operaci a výsledek vypište..
+V textBox1 je řetězec obsahující cifry. Např. “ ab7 2 jk10”. Nahraďte cifry slovním vyjádřením. Např. “ absedm dva jkjednanula”.

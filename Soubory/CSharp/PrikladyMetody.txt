@@ -1,0 +1,8 @@
+Metoda je pojmenovaný blok kódu, který obsahuje řadu příkazů. Tyto příkazy jsou provedeny při každém volání metody v programu. Metody píšeme jako součást nějaké třídy. Jde vlastně o funkce, které implementují služby poskytované objektem nebo třídou. Metoda se skládá z deklarace a implementace.
+Metoda Prumer pro tři reálná čísla vrátí jejich aritmetický průměr.
+Metoda Liche pro celé číslo zjistí, zda je liché.
+Metoda Vzdalenost pro 2 body v rovině vrací jejich vzdálenost. (Parametrem budou 4 kartézské souřadnice).
+Metoda Mocnina vrátí celočíselnou mocninu. Parametrem budou celá čísla základ a exponent.
+Metoda Faktorial vrátí faktoriál parametru.
+Metoda CifLichSoucet vrátí ciferný součet lichých cifer.
+Metoda JePrvocislo zjistí, zda zadané celé kladné číslo je prvočíslo.

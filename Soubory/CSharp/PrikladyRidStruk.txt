@@ -1,4 +1,6 @@
-tohle je picovina
-mnaou1
-msnad2
-mjojofas3
+TextBox - Slouží k zadávání textu jednořádkového nebo víceřádkového textu., ListBox Vlastnost Items - Indexováno počínaje 0, V designeru ve Visual Studiu si zde můžete zadat textové položky. Do Items jinak můžete vložit libovolné objekty. Budou se poté vypisovat tak, jak udává jejich metoda ToString(). Ukládat do těchto ovládacích prvků rovnou objekty je velmi výhodné, to uvidíte u vlastnosti SelectedItem.
+Je dáno celé číslo a a nezáporné číslo n. Po stisku tlačítka spočtěte mocninu an a faktoriál n! dle dvou komponent Checkbox. Výsledky zobrazte v okně se zprávou.
+Na vstupu (textBox1) je celé kladné číslo n. Po stisku tlačítka button1 vypište ciferný součet čísla n pomocí MessageBox. Po stisku tlačítka button2 vypište do komponenty ListBox všechny dělitele čísla n.
+V komponentě TextBox – víceřádkové je několik čísel. Po stisku tlačítek spočítejte průměr čísel., minimum z čísel, počet čísel v intervalu <5,30) a pozice (indexy)prvního a posledního čísla 3 v TextBox. Výsledky vypište do 4 komponent Label.
+V textBox1 je celé číslo n. Button1: Vygenerujte n náhodných celých čísel z intervalu 0..100 a přidávejte je do listBox1, Button2: V listBox1  vynulujte všechna sudá čísla. Zdůvodněte, proč nelze použít cyklus foreach. Button3: Cyklem foreach najděte v listBox1 maximum.
+Na komponentu Panel umístěte několik komponent TextBox a tlačítka s popisky Ukaž a Skryj. Po kliku na tlačítko Ukaž zviditelni dané TextBoxy a pomocí tlačítka Skryj ukryj všechny TextBoxy. Použij cyklus Foreach, který projde všechny komponenty na Panelu.

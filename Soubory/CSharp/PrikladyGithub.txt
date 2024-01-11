@@ -1,0 +1,1 @@
+Vypnutí proxy serveru: Ovládací panely – Síť internet - Možnosti internetu – Připojení – Nastavení místní sítě – vypnout Automaticky zjišťovat nastavení, Běžte na stránku https://github.com/ a vytvořte si účet a vyplňte potřebné údaje. Ověřte svou e-mailovou adresu. Seznamte se s prostředím – úprava profilu, sledování ostatních uživatelů, repositářů.
