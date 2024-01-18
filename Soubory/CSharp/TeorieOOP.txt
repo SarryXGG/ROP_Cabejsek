@@ -1,0 +1,5 @@
+Třída je základní stavební jednotkou objektově orientovaného programování. Slouží jako šablona nebo návrh pro vytváření objektů. Definuje data (atributy) a metody (funkce).
+Objekt je konkrétní instance třídy vytvořená podle její definice. Obsahuje unikátní data a může vykonávat metody, které jsou definované ve třídě.
+Atributy: Data třídy nazýváme atributy. Mohou být veřejné, privátní nebo chráněné a určují vlastnosti objektu.
+Metody: Funkce třídy jsou nazývány metody. Tyto metody definují operace, které může objekt provádět.
+Dědičnost: Třídy mohou dědit vlastnosti a chování od jiných tříd. To umožňuje vytvářet hierarchie tříd a snižuje duplikaci kódu.

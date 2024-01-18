@@ -1,0 +1,16 @@
+Založení dalšího formuláře: Pravé tlačítko na název projektu -> Přidat -> Nová položka -> Formulář Windows. Napsat název formuláře Form2.cs. Nebo můžeme vše naprogramovat viz níže.
+Modální formulář se otevře pomocí metody ShowDialog(). Hlavní formulář můžeme obsluhovat až po zavření modálního formuláře.
+Nemodální formulář se otevře pomocí metody Show(). Můžeme obsluhovat oba dva formuláře zároveň.
+Musíme vytvořit instanci dané třídy Form2 form2 = new Form2();
+Pokud chceme pracovat s komponentami z formuláře Form2 na hlavním formuláři Form1. Musíme komponentám nastavit vlastnost Modifiers na public.
+Pokud chceme pracovat s komponentami z hlavního formuláře Form1 na formuláři Form2. Musíme přidat konstruktor do Form2.
+Form1 form1;
+public Form2(Form1 form)
+        {
+            InitializeComponent();
+            form1 = form;
+        }
+Potom metody ShowDialog() a Show() voláme s parametrem this: ShowDialog(this) nebo Show(this).
+Pokud chceme formulář uvolnit z paměti, zavoláme metodu form2.Dispose();
+Vlastnost form3.IsDisposed vrací bool, zda existuje instance třídy. 
+Metoda form3.Activate() dá formuláři fokus.

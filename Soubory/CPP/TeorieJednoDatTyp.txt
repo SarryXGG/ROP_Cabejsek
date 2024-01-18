@@ -1,0 +1,21 @@
+Bool je reprezentovaný jednou ze dvou hodnot true (pravda, 1), nebo false (nepravda, 0). 
+true, false – logické konstanty
+true je jakákoliv nenulová hodnota
+false je nulová hodnota. 
+True a false se mohou konvertovat do typu int. True se interpretuje jako 1, false jako 0.
+Příklad deklarace:
+bool x;
+x – logická proměnná
+Logické operátory
+!, &&, ||
+Zopakovat tabulky pravdivostních hodnot
+Logickým proměnným můžeme přiřazovat výsledky logických výrazů
+
+bool x,y;
+x = true;
+
+x = 2==3;   //v x je false
+
+y = x || (1>0);   //v y je true
+
+y = !y;   //v Y je negace původní hodnoty

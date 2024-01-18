@@ -1,0 +1,31 @@
+Pomocí třídy Convert
+Konvertuje základní datový typ na ji ný základní datový typ.
+int x = Convert.ToInt32(textBox2.Text);
+double y = Convert.ToDouble(textBox3.Text)
+Parsování (metoda Parse)
+Parsuje řetězec na požadovaný datový typ.
+int y = int.Parse(textBox3.Text); 
+(Obdobně pro double a další základní typy)
+Metoda ToString()
+Převede jakýkoliv objekt (nejen základní typy) na textovou reprezentaci – řetězec.
+TextBox
+Nastavení barvy pozadí: 
+textBox1.BackColor = Color.Green;
+Nastavení barvy písma: 
+textBox1.ForeColor  = Color.Red
+Vymazání textBox: 
+textBox1.Clear();
+Ukončení aplikace:
+Close();
+Vlastnost, která zpřístupňuje nebo zakazuje TextBox (umožní nebo zakáže editaci):
+textBox1.Enabled = true;   (false)
+Sami najděte vlastnost nebo metodu, která skrývá nebo zobrazuje komponentu.
+Okno se zprávou
+MessageBox.Show(“Text zprávy“)
+Pokud chceme zobrazit číslo, musíme přetypovat, nejlépe metodou ToString()
+
+Matematické funkce – třída Math
+Math.PI – konstanta Pí
+Math.Pow() – obecná mocnina
+Math.Sqrt() – odmocnina
+Math.Abs() – absolutní hodnota

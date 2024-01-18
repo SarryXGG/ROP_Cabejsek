@@ -1,0 +1,11 @@
+DateTime je struktura představující časový okamžik, obvykle vyjádřený jako datum a čas.
+V objektu DateTime je v podstatě uložen čas, který uplynul od pevně stanoveného časového okamžiku 1.1.0001 00:00:00. 
+Tato uplynulá doba nám jednoznačně určuje časový okamžik – datum a čas.
+Ticks
+Datum a čas je uložen s přesností na deseti-milióntinu sekundy (sto-tisícinu milisekundy), tedy mnohem přesněji než systémový čas v počítači.
+Této nejmenší jednotce říkáme tick (tik, takt, impulz).
+Inicializace objektu DateTime
+K novému objektu DateTime můžete přiřadit počáteční hodnotu různými způsoby:
+Voláním konstruktoru
+Přiřazením návratové hodnoty nebo vlastnosti třídy DateTime
+Přiřazením analyzované textové reprezentace data a času

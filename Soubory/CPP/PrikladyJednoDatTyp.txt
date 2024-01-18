@@ -1,4 +1,3 @@
--Celočíselné datové typy, logický datový typ boolean a datový typ char. Datový typ char je 256 prvková množina znaků, obsahuje všechny znaky ze znakové sady platné při spuštění programu = všechny znaky obsažené v ASCII tabulce, včetně znaků řídících. Bool je reprezentovaný jednou ze dvou hodnot true (pravda, 1), nebo false (nepravda, 0), představují podmnožiny celých čísel
 Číselné typy - Na vstupu je dáno celé kladné číslo. Spočítejte jeho ciferný součet, ciferný součin, počet cifer, počet lichých cifer a aritmetický průměr všech cifer.
 Číselné typy - Na vstupu je dáno cele kladné číslo. Spočítejte jeho faktoriál.
 Číselné typy - Na vstupu je dáno reálné číslo a a celé číslo n. Spočítejte a na n-tou.

@@ -1,0 +1,8 @@
+Klíčovým prvkem této struktury je podmínka. Na základě této podmínky vzniká rozhodování, zda provést či neprovést příkaz v kladné či záporné větvi.
+Podmínka je výraz, o kterém lze vždy rozhodnout, zda je pravdivý, či nepravdivý.
+Pokud platí podmínka, provede se Příkaz1, v opačném případě se provede Příkaz2.
+Příkaz if
+
+if (Podmínka)Příkaz1;
+else Příkaz2;
+Pokud kladná a záporná větev obsahuje více příkazů, vytvoříme složený příkaz pomocí složených závorek {}:

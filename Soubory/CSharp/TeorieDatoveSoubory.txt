@@ -1,0 +1,15 @@
+Soubor (file) je pojmenovaná sada dat uložená na záznamovém médiu, se kterou lze pracovat nástroji operačního systému jako s jedním celkem.
+Proud (Stream)
+Proud (Stream) je  „prostředníkem“ mezi zpracovávaným souborem a naším programem. (Existují také proudy pro práci s operační pamětí a pro komunikaci v počítačové síti).
+Chceme-li přistupovat k obsahu souboru, je nutné použít nějaký stream.
+Třídy pro práci se soubory jsou definovány ve jmenném prostoru Systém.IO
+Proudy, se kterými budeme pracovat, jsou definovány jako potomci třídy abstraktní třídy Stream, která definované metody pro operace čtení z proudu (Read), zápis (Write) a přesun (Seek).
+Třída FileStream
+Třídu FileStream budeme používat pro čtení souboru a k úpravám obsahu souboru.
+Konstruktor
+Třída FileStream má 15 konstruktorů, my budeme používat následující přetížení:
+public FileStream(
+	string path,
+	FileMode mode,
+	FileAccess access
+)

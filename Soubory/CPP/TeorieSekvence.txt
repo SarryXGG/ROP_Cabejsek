@@ -1,0 +1,12 @@
+Algoritmem rozumíme posloupnost operací, která pro přípustná vstupní data vede po konečném počtu kroků k odpovídajícím výsledkům.
+Algoritmus musí mít tyto 3 vlastnosti:
+Obecnost
+Determinovanost
+Rezultativnost
+Obecnost: Algoritmus řeší stanovenou úlohu pro libovolná vstupní data z množiny přípustných hodnot.
+Determinovanost: V každém kroku algoritmu je přesně určeno, jaká operace se má vykonávat
+Rezultativnost: Po konečném počtu kroků dostanu konečný výsledek.
+Způsoby zápisu algoritmu:
+Grafický zápis
+Odborný jazyk
+Programovací jazyk

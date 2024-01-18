@@ -1,0 +1,12 @@
+Hodnotové typy
+Instance hodnotových typů (proměnné) jsou ukládány na zásobník programu a program s nimi pracuje přímo. Hodnotové proměnné obsahují pouze hodnotu bez dalších doplňujících informací.
+Hodnotové typy jsou v jazyce CSharp primitivní datové typy (celočíselné a reálné), struktury a výčtové typy.
+Referenční typy
+Referenční datové typy neuchovávají hodnotu samotnou, ale pouze odkaz na místo v paměti (halda), kde je skutečná instance uložena.
+Řetězce
+Řetězec představuje posloupnost znaků, tedy hodnot typu char
+S řetězci můžeme pracovat např. pomocí:
+Datového typu string, což je synonymum pro bázovou třídu String
+Třídy StringBuilder
+Přístup k jednotlivým znakům pomocí indexu
+Index je pozice znaků v řetězci. První znak má index 0.

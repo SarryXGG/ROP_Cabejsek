@@ -1,0 +1,23 @@
+Metoda
+Metoda je pojmenovaný blok kódu, který obsahuje řadu příkazů. Tyto příkazy jsou provedeny při každém volání metody v programu. Metody píšeme jako součást nějaké třídy.
+Jde vlastně o funkce, které implementují služby poskytované objektem nebo třídou.
+Metoda se skládá z deklarace a implementace.
+Deklarace metody
+Metody deklarujeme v rámci příslušné třídy. Deklarace metody obsahuje několik částí:
+Modifikátor přístupu 
+private – metodu lze použít pouze v rámci třídy, k níž metoda patří,
+pokud nepoužijeme žádný modifikátor, je v C# metoda standardně private
+public – nejsou žádná omezení přístupu k metodě, lze použít z libovolného místa v programu
+protected – lze použít pouze v rámci třídy, k níž metoda patří
+Typ návratové hodnoty
+Pokud metoda nevrací žádnou hodnotu, uvedeme void (vrací void)
+Název metody (identifikátor metody)
+Název metody používáme při volání.
+Pro názvy metod platí stejná pravidla jako pro názvy proměnných
+Konvence - „velbloudího zápisu“, jméno metody začíná v CSharp velkým písmenem
+Parametry
+Parametry jsou uvedené v kulatých závorkách stejným způsobem jako při deklaraci proměnných (datový typ následovaný názvem parametru). Pokud má metoda více parametrů, oddělujeme je čárkou.
+Pokud metoda nemá žádné parametry, necháme závorky prázdné
+Příklad deklarace metody:
+private double Mocnina(int a, int n)
+private void VypisJmeno();

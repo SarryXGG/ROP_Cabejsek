@@ -1,0 +1,4 @@
+Vyjímka je objekt, který reprezentuje neočekávanou nebo chybovou situaci během provádění programu.
+Vyjímky se obvykle zachytávají pomocí konstrukce try-catch. Kód, který může vyvolat vyjímku, je umístěn v bloku try.
+Blok catch obsahuje kód, který se provede, pokud byla vyjímka vyvolána. Každý catch blok je schopen zachytit specifický typ vyjímky.
+Volitelný blok finally může obsahovat kód, který se provede vždy, bez ohledu na to, zda byla vyjímka zachycena nebo ne.

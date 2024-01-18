@@ -1,0 +1,14 @@
+Deklarace
+datový_typ[] identifikátor;
+např.
+int [] ciselnePole;
+Tímto je vytvořena referenční proměnná typu pole, která má hodnotu null, instance objektu ještě není vytvořena. V poli ciselnePole mohou být uloženy hodnoty int.
+Inicializace pole
+ciselnePole = new int[4]; //Všechny 4 prvky int  mají hodnotu 0
+
+nebo je možné inicializaci pole provést už při jeho deklaraci:
+int[] cislenePole = new int int[] ciselnePole [4];
+
+Při inicializaci je možné pole rovnou naplnit potřebnými hodnotami:
+int[] ciselnePole = new int[] {10,20,30,40};
+string[] dnyTydnu = new string[] {"Po","Ut","St","Ct","Pa","So","Ne"}

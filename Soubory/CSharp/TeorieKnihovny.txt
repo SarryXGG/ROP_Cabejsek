@@ -1,0 +1,8 @@
+Knihovnu zakládáme jako samostatný projekt, můžeme ji přidat ke stávajícímu řešení, a nebo vytvořit řešení nové.
+Vybereme Přidat - Nový projekt
+Do vyhledávacího pole napíšeme knihovna a vybereme Knihovna tříd (.NET Standard)
+Nyní již můžeme psát metody do naší třídy Operace.
+Protože v programu nebudeme vytvářet instanci třídy Operace, všechny metody budou statické.
+Napište metodu Soucet, která vrátí součet dvou celých čísel
+Napište metodu CelociselnyPodil, která vrátí podíl dvou celých čísel a v parametru zbytek bude zbytek po celočíselném dělení.
+Nyní můžeme volat metody naší třídy Operace v našem projektu.

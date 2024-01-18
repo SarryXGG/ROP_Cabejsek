@@ -1,0 +1,6 @@
+Jednorozměrné pole
+Pole je strukturovaný datový typ.
+Proměnná typu pole slouží k uchování více hodnot stejného typu. Každá z těchto hodnot se ukládá do samostatného prvku pole a v paměti jsou uloženy za sebou.
+Například chceme uchovat 100 hodnot typu int, nemusíme deklarovat 100 různých proměnných, ale vytvoříme jednu proměnnou typu pole s rozměrem 100. V paměti se tak alokuje oblast, která je pomyslně rozdělena na 100 částí - prvků. Každý prvek má svůj index, což jsou v tomto konkrétním případě celá čísla od 0 po 99.
+První prvek má index 0, druhý index 1, třetí 2, …, poslední prvek má index 99.
+K prvkům pole můžeme přistupovat jednotlivě pomocí indexu. Na másledujícím obrázku vidíte pole osmi čísel. První prvek pole má index 0 a poslední osmý prvek má index 7:

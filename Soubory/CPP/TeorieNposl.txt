@@ -1,0 +1,4 @@
+Máme-li na vstupu N-prvkovou posloupnost, znamená to, že na vstupu je nejprve číslo n a pak následuje dalších n hodnot – prvků posloupnosti. Celkem je n+1 vstupů.
+Např. Vstup (3,10,50,45) značí 3-prvkovou posloupnost o prvcích 10,50, 45.
+Zpracováváme-li obecně N prvků, musíme si bez dalších znalostí všechny prvky ukládat do jediné proměnné. Každý prvek načteme do proměnné, ihned ho zpracujeme a pak můžeme do stejné proměnné načíst další prvek, aniž by nám vadilo, že hodnotu předchozího prvku ztratíme.
+Musíme si přečtené prvky průběžně počítat, abychom věděli, kdy ukončit cyklus.

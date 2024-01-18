@@ -1,0 +1,11 @@
+Add(položka) – přidá položku na konec seznamu
+Clear() - Vymaže všechny položky v listu.
+Remove(položka) - Vymaže první nalezenou položku, vrací logickou hodnotu (zda byly odstraňovaná položka nalezena)
+RemoveAt(index) - Vymaže položku na daném indexu.
+Contains(položka) – Zjistí, zda List obsahuje danou položku, vrací logickou hodnotu
+IndexOf(položka) - Vrátí index prvního výskytu položky. Pokud položka není nalezena, vrací metoda hodnotu -1
+LastIndexOf(položka) - Vrací index posledního výskytu položky v Listu. Pokud položka není nalezena, vrací metoda hodnotu -1
+Distinct() – Vrátí list bez duplicitních položek
+Insert(index, položka) - Vloží položku na daný index v Listu.
+Sort() - setřídí položky v listu.
+Reverse() - Funguje stejně jako u pole, obrátí List tak, že je první položka poslední a naopak. Metoda nic nevrací, změny se provedou přímo v Listu.

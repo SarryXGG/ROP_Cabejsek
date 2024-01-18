@@ -37,8 +37,10 @@ namespace ROP_Cabejsek
         }
         Priklady formPriklady = new Priklady();
         string[] separators = { "\r\n", "\r", "\n" };
-    private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -49,21 +51,15 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySekvence.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieSekvence.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
+                    s = srT.ReadToEnd();
                     //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
@@ -75,18 +71,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
-                    for (int i = 1; i < sts.Length; i++)
+
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySekvence.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i+1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -117,6 +125,8 @@ namespace ROP_Cabejsek
 
         private void button2_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -127,21 +137,15 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySelekce.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieSelekce.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
+                    s = srT.ReadToEnd();
                     //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
@@ -153,18 +157,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
-                    for (int i = 1; i < sts.Length; i++)
+
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySelekce.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -195,6 +211,8 @@ namespace ROP_Cabejsek
 
         private void button3_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -205,9 +223,37 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieCykly.txt"))
+            {
+                string s;
+                if (!srT.EndOfStream)
+                {
+                    s = srT.ReadToEnd();
+                    //pridani teorie na zacatek label
+                    Label labelTeorie = new Label();
+                    labelTeorie.Text = "Teorie";
+                    labelTeorie.AutoSize = true;
+                    labelTeorie.Top = currentTop;
+                    formPriklady.Controls.Add(labelTeorie);
+                    currentTop += verticalSpacing;
+                    //pridani tb s teorii
+                    TextBox tba = new TextBox();
+                    tba.Multiline = true;
+                    tba.ScrollBars = ScrollBars.Vertical;
+                    tba.Text = s;
+                    tba.Width = formPriklady.ClientSize.Width - 20;
+                    tba.Height = 60;
+                    tba.Top = currentTop;
+                    tba.ReadOnly = true;
+                    formPriklady.Controls.Add(tba);
+                    currentTop += tba.Height + verticalSpacing;
+                }
+            }
+
+
             using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyCykly.txt"))
             {
                 string s;
@@ -217,13 +263,10 @@ namespace ROP_Cabejsek
                     s = sr.ReadToEnd();
                     sts = s.Split(separators, StringSplitOptions.None);
 
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
-                    for (int i = 1; i < sts.Length; i++)
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -254,6 +297,8 @@ namespace ROP_Cabejsek
 
         private void button4_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -264,21 +309,15 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySwitch.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieSwitch.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
+                    s = srT.ReadToEnd();
                     //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
@@ -290,18 +329,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
-                    for (int i = 1; i < sts.Length; i++)
+
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySwitch.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -332,6 +383,8 @@ namespace ROP_Cabejsek
 
         private void button5_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -342,21 +395,15 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrintf.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeoriePrintf.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
+                    s = srT.ReadToEnd();
                     //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
@@ -368,18 +415,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
-                    for (int i = 1; i < sts.Length; i++)
+
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrintf.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -410,6 +469,8 @@ namespace ROP_Cabejsek
 
         private void button6_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -420,21 +481,15 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyNposl.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieNposl.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
+                    s = srT.ReadToEnd();
                     //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
@@ -446,18 +501,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
-                    for (int i = 1; i < sts.Length; i++)
+
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyNposl.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -488,6 +555,8 @@ namespace ROP_Cabejsek
 
         private void button7_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -498,21 +567,16 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPoslZaHodn.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeoriePoslZaHodn.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-                                         //pridani teorie na zacatek label
+                    s = srT.ReadToEnd();
+                    //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
                     labelTeorie.AutoSize = true;
@@ -523,19 +587,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
 
-                    for (int i = 1; i < sts.Length; i++)
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPoslZaHodn.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -566,6 +641,8 @@ namespace ROP_Cabejsek
 
         private void button8_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -576,21 +653,15 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyJednoDatTyp.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieJednoDatTyp.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
+                    s = srT.ReadToEnd();
                     //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
@@ -602,18 +673,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
-                    for (int i = 1; i < sts.Length; i++)
+
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyJednoDatTyp.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -644,6 +727,8 @@ namespace ROP_Cabejsek
 
         private void button9_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -654,21 +739,15 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeoriePole.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
+                    s = srT.ReadToEnd();
                     //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
@@ -680,18 +759,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
-                    for (int i = 1; i < sts.Length; i++)
+
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -722,6 +813,8 @@ namespace ROP_Cabejsek
 
         private void button10_Click(object sender, EventArgs e)
         {
+            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
+            int currentTop = 10; // Počáteční vertikální pozice
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
@@ -732,21 +825,15 @@ namespace ROP_Cabejsek
                     formPriklady.Controls.Remove(control);
                 }
             }
-
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFce.txt"))
+
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieFce.txt"))
             {
                 string s;
-                string[] sts;
-                if (!sr.EndOfStream)
+                if (!srT.EndOfStream)
                 {
-                    s = sr.ReadToEnd();
-                    sts = s.Split(separators, StringSplitOptions.None);
-
-                    int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-                    int currentTop = 10; // Počáteční vertikální pozice
-
+                    s = srT.ReadToEnd();
                     //pridani teorie na zacatek label
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
@@ -758,18 +845,30 @@ namespace ROP_Cabejsek
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
-                    tba.Text = sts[0];
+                    tba.Text = s;
                     tba.Width = formPriklady.ClientSize.Width - 20;
                     tba.Height = 60;
                     tba.Top = currentTop;
                     tba.ReadOnly = true;
                     formPriklady.Controls.Add(tba);
                     currentTop += tba.Height + verticalSpacing;
+                }
+            }
 
-                    for (int i = 1; i < sts.Length; i++)
+
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFce.txt"))
+            {
+                string s;
+                string[] sts;
+                if (!sr.EndOfStream)
+                {
+                    s = sr.ReadToEnd();
+                    sts = s.Split(separators, StringSplitOptions.None);
+
+                    for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -797,5 +896,4 @@ namespace ROP_Cabejsek
                 formPriklady.ShowDialog();
             }
         }
-    }
 }

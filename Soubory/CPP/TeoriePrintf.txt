@@ -1,0 +1,4 @@
+Užitečnou funkcí je funkce printf, slouží k formátovanému výstupu textu. Funkce vrací počet zapsaných znaků, v případě chyby vrací hodnotu -1.
+Syntaxe:	printf("formát výstupního řetězce",vycet_proměnných);
+do výstupního řetězce se kromě obyčejných znaků zadávají řídící sekvence (formátovací specifikace), které funkci printf říkají, jak má uvedenou sekvenci nahradit hodnotou proměnné
+výčet proměnných: jména proměnných oddělena čárkou, musí být uvedena ve stejném pořadí, v jakém jsou uvedeny ve formátovací specifikaci.

@@ -1,0 +1,8 @@
+Soubor (file) je pojmenovaná sada dat uložená na záznamovém médiu, se kterou lze pracovat nástroji operačního systému jako s jedním celkem.
+Textový soubor obsahuje znaky uspořádané do řádků (řídící znaky CR a LF)
+Společně vypracujeme projekt TextoveSoubory00, kde si vyzkoušíme základní postupy pro práci s textovými soubory.
+Až budeme mít projekt vypracován, nahraji vám jej i s doplněnými komentáři.
+Systém.IO
+Namespace System.IO obsahuje třídy, které nám umožňují čtení a zápis do souborů a datových streamů, a dále třídy, které poskytují základní možnosti pro práci se soubory a adresáři jako s celky (mazání, kopírování…)
+Chceme-li pracovat se soubory (případně adresáři), musíme do projektu přidat řádek:
+using System.IO;

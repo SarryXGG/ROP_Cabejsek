@@ -1,0 +1,3 @@
+Prvočíslo: Přirozené číslo větší než 1, které nemá žádné dělitele kromě 1 a sebe sama.
+ 2 je jediné sudé prvočíslo, protože všechny ostatní sudé čísla jsou dělitelná dvěma a nemohou být prvočísly.
+Síto Eratosthenovo: Je to starověká metoda pro generování prvočísel, která postupně odstraňuje násobky prvočísel a zůstávající čísla jsou prvočísla.

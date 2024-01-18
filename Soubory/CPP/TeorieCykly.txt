@@ -1,0 +1,7 @@
+Algoritmus musí být především správný (splňuje 3 vlastnosti probrané dříve), ale měl by splňovat i následující cíle:
+Přehlednost
+Snadná modifikovatelnost (změny v algoritmu samotném nebo použití algoritmu (ať už celého nebo části) v jiném algoritmu)
+Snadná verifikovatelnost (ověření správnosti)
+Principy, kterými dosáhneme těchto tří cílů:
+Princip abstrakce – úloha jako celek je rozdělena na dílčí úkoly, které se při rozboru pojmenují a řeší se až v další fázi.
+Princip jednoduchosti – používáme strukturované programování

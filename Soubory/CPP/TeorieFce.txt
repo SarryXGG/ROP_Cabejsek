@@ -1,0 +1,7 @@
+Deklarace: Funkce se deklaruje před jejím použitím, aby bylo možné informovat kompilátor o existenci této funkce.
+Definice: Tělo funkce obsahuje samotný kód, který se provede při volání funkce. Definice obsahuje návratový typ, název funkce, seznam parametrů a kód.
+Návratový typ funkce: Každá funkce má návratový typ, což je datový typ hodnoty, kterou funkce vrací po svém provedení.
+Parametry funkce: Funkce může přijímat nula nebo více parametrů. Parametry jsou hodnoty, které jsou předány do funkce při jejím volání.
+Volání funkce: Funkce se volá jejím názvem spolu s potřebnými argumenty, které jsou předány do funkce.
+Lokální proměnné: Proměnné definované ve funkci jsou lokální a jsou viditelné pouze uvnitř této funkce.
+Globální proměnné: Proměnné definované mimo všechny funkce jsou globální a jsou viditelné ve všech funkcích programu.

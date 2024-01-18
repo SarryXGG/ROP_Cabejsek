@@ -1,0 +1,19 @@
+Cyklus while
+Stejný jako v C++, není třeba znovu probírat
+Cyklus do while
+Stejný jako v C++, není třeba znovu probírat
+Cyklus for
+Stejný jako v C++, není třeba znovu probírat
+
+TextBox
+Slouží k zadávání textu jednořádkového nebo víceřádkového textu.
+Vlastnosti
+Text  (typ String) – text zapsaný v komponentě
+MultiLine  (typ bool) – určuje, zda můžeme zadat víceřádkový text. Pokud nastavíme na true, můžeme textové pole roztahovat i na výšku a můžeme do něj vkládat víceřádkový text.
+Lines (typ String[] ) - obsah TextBoxu jako pole řádků (stringů). Používáme v případě, že je vlastnost MultiLine na true.
+
+Přístup k i-tému řádku: textBox1.Lines[i]
+Length (typ int) – počet znaků
+
+Metoda
+Count()  (vrací int) – počet řádků

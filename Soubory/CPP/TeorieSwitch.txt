@@ -1,0 +1,15 @@
+Příkaz switch v C++ funguje jako přepínač, který říká, jaký řádek programového kódu se má dále provést.
+switch (celočíselný_výraz)
+{
+   case konstanta1 : příkaz(y)
+   case konstanta2 : příkaz(y)
+
+   ...
+   default : příkaz(y)
+}
+Program skáče na řádek, který je označen hodnotou odpovídající hodnotě celočíselný_výraz.
+Hodnota celočíselný_výraz musí být výrazem, který produkuje celočíselnou hodnotu. (int, char, enum)
+Počet větví není limitován
+Jestliže celočíselný_výraz neodpovídá žádné konstantě (1,2,3…), program přejde na řádek default, tato část není povinná.
+Vynecháte-li část default ho a nenajde-li se žádná shoda, program opustí příkaz switch a pokračuje dále. 
+Jakmile program přeskočí na určitý řádek ve switch, potom provádí všechny příkazy, které za ním následují, vykonávání se automaticky NEzastaví na dalším case. Chceme-li zastavit na konci určité skupiny příkazů, musíte použít příkaz break. To způsobí opuštění příkazu switch.
