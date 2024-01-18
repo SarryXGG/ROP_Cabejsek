@@ -49,7 +49,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieGUI.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieGUI.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -77,7 +77,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyGUI.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyGUI.txt"))
             {
                 string s;
                 string[] sts;
@@ -135,7 +135,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieRidStruk.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieRidStruk.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -163,7 +163,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyRidStruk.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyRidStruk.txt"))
             {
                 string s;
                 string[] sts;
@@ -222,7 +222,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeoriePole.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeoriePole.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -250,7 +250,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPole.txt"))
             {
                 string s;
                 string[] sts;
@@ -308,7 +308,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieString.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieString.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -336,7 +336,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyString.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyString.txt"))
             {
                 string s;
                 string[] sts;
@@ -399,7 +399,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieMetody.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieMetody.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -427,7 +427,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyMetody.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyMetody.txt"))
             {
                 string s;
                 string[] sts;
@@ -485,7 +485,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieList.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieList.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -513,7 +513,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyList.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyList.txt"))
             {
                 string s;
                 string[] sts;
@@ -571,7 +571,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieKnihovny.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieKnihovny.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -599,7 +599,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyKnihovny.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyKnihovny.txt"))
             {
                 string s;
                 string[] sts;
@@ -657,7 +657,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeoriePrvocisla.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeoriePrvocisla.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -685,7 +685,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrvocisla.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPrvocisla.txt"))
             {
                 string s;
                 string[] sts;
@@ -743,7 +743,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieDatumACas.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieDatumACas.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -771,7 +771,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyDatumACas.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatumACas.txt"))
             {
                 string s;
                 string[] sts;
@@ -829,7 +829,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieOOP.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieOOP.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -857,7 +857,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyOOP.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyOOP.txt"))
             {
                 string s;
                 string[] sts;
@@ -915,7 +915,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieTextoveSoubory.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieTextoveSoubory.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -943,7 +943,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyTextoveSoubory.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyTextoveSoubory.txt"))
             {
                 string s;
                 string[] sts;
@@ -1001,7 +1001,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieDatoveSoubory.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieDatoveSoubory.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -1029,7 +1029,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyDatoveSoubory.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatoveSoubory.txt"))
             {
                 string s;
                 string[] sts;
@@ -1087,7 +1087,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieVyjimky.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieVyjimky.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -1115,7 +1115,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyVyjimky.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyVyjimky.txt"))
             {
                 string s;
                 string[] sts;
@@ -1173,7 +1173,7 @@ namespace ROP_Cabejsek
             // Aktualizuje a překresluje formulář
             formPriklady.Refresh();
 
-            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CPP\TeorieFormulare.txt"))
+            using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieFormulare.txt"))
             {
                 string s;
                 if (!srT.EndOfStream)
@@ -1201,7 +1201,7 @@ namespace ROP_Cabejsek
             }
 
 
-            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFormulare.txt"))
+            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyFormulare.txt"))
             {
                 string s;
                 string[] sts;

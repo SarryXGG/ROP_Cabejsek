@@ -21,7 +21,7 @@ namespace ROP_Cabejsek
         }
 
         private void vypsaniPrikladu()
-        { 
+        {
         }
 
         private void FormularCPP_Load(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace ROP_Cabejsek
 
         }
 
-        
+
 
         private void FormularCPP_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -94,7 +94,7 @@ namespace ROP_Cabejsek
                     for (int i = 0; i < sts.Length; i++)
                     {
                         Label labelNazev = new Label();
-                        labelNazev.Text = "Příklad č." + (i+1);
+                        labelNazev.Text = "Příklad č." + (i + 1);
                         labelNazev.AutoSize = true;
                         labelNazev.Top = currentTop;
 
@@ -896,4 +896,5 @@ namespace ROP_Cabejsek
                 formPriklady.ShowDialog();
             }
         }
+    }
 }
