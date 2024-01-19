@@ -116,13 +116,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -150,13 +144,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -184,13 +172,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -218,13 +200,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -251,13 +227,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -285,13 +255,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -319,13 +283,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -353,13 +311,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -387,13 +339,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -421,13 +367,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -455,13 +395,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -489,13 +423,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -523,13 +451,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -557,13 +479,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -591,13 +507,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -625,13 +535,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -658,13 +562,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -692,13 +590,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -726,13 +618,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -760,13 +646,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -794,13 +674,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -828,13 +702,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -862,13 +730,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
@@ -896,13 +758,7 @@ namespace ROP_Cabejsek
                                 string[] sts;
                                 s = sr.ReadToEnd();
                                 sts = s.Split(separators, StringSplitOptions.None);
-                                for (int i = 1; i < 20; i++)
-                                {
-                                    if (cislo == i)
-                                    {
-                                        MessageBox.Show(sts[cislo - 1]);
-                                    }
-                                }
+                                MessageBox.Show(sts[cislo - 1]);
                             }
                         }
                     }
