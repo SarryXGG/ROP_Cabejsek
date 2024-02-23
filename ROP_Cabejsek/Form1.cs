@@ -1628,370 +1628,1789 @@ namespace ROP_Cabejsek
                 {
                     case "C++ Sekvence":
                         {
-
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySekvence.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Sekvence01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Sekvence01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Sekvence02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Sekvence02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Sekvence03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Sekvence03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Sekvence04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Sekvence04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Sekvence05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Sekvence05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Sekvence06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Sekvence06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Sekvence07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Sekvence07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Selekce":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySelekce.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Selekce01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Selekce01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Selekce02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Selekce02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Selekce03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Selekce03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Selekce04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Selekce04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Selekce05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Selekce05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Selekce06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Selekce06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Selekce07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Selekce07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Cykly":
                         {
-                            
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyCykly.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Cykly01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Cykly01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Cykly02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Cykly02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Cykly03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Cykly03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Cykly04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Cykly04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Cykly05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Cykly05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Cykly06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Cykly06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Cykly07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Cykly07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Switch":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySwitch.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Switch01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Switch01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Switch02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Switch02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Switch03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Switch03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Switch04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Switch04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Switch05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Switch05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Switch06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Switch06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Switch07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Switch07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
+
                     case "C++ Printf":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrintf.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Printf01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Printf01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Printf02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Printf02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Printf03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Printf03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Printf04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Printf04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Printf05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Printf05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Printf06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Printf06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Printf07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Printf07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ N-prvková posloupnost":
                         {
-                            
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyNposl.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Nposl01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Nposl01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Nposl02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Nposl02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Nposl03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Nposl03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Nposl04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Nposl04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Nposl05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Nposl05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Nposl06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Nposl06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Nposl07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Nposl07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Posloupnost Zakončená Hodnotou":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPoslZaHodn.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\PoslZakHodn01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\PoslZakHodn01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\PoslZakHodn02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\PoslZakHodn02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\PoslZakHodn03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\PoslZakHodn03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\PoslZakHodn04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\PoslZakHodn04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\PoslZakHodn05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\PoslZakHodn05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\PoslZakHodn06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\PoslZakHodn06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\PoslZakHodn07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\PoslZakHodn07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Jednoduché Datové Typy":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyJednoDatTyp.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\JednDatTyp01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\JednDatTyp01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\JednDatTyp02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\JednDatTyp02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\JednDatTyp03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\JednDatTyp03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\JednDatTyp04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\JednDatTyp04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\JednDatTyp05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\JednDatTyp05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\JednDatTyp06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\JednDatTyp06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\JednDatTyp07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\JednDatTyp07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Pole":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Pole01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Pole01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Pole02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Pole02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Pole03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Pole03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Pole04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Pole04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Pole05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Pole05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Pole06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Pole06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Pole07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Pole07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Funkce":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFce.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Funkce01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Funkce01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Funkce02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Funkce02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Funkce03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Funkce03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Funkce04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Funkce04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Funkce05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Funkce05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Funkce06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Funkce06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CPP\exe\Funkce07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CPP\exe\Funkce07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# GUI":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyGUI.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\GUI01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\GUI01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\GUI02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\GUI02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\GUI03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\GUI03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\GUI04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\GUI04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\GUI05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\GUI05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\GUI06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\GUI06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\GUI07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\GUI07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# Řídící Struktury":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyRidStruk.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\RidStruk01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\RidStruk01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\RidStruk02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\RidStruk02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\RidStruk03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\RidStruk03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\RidStruk04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\RidStruk04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\RidStruk05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\RidStruk05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\RidStruk06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\RidStruk06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\RidStruk07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\RidStruk07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# Pole":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPole.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Pole01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Pole01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Pole02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Pole02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Pole03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Pole03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Pole04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Pole04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Pole05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Pole05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Pole06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Pole06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Pole07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Pole07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# String":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyString.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\String01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\String01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\String02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\String02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\String03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\String03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\String04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\String04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\String05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\String05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\String06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\String06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\String07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\String07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# Metody":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyMetody.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Metody01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Metody01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Metody02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Metody02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Metody03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Metody03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Metody04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Metody04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Metody05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Metody05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Metody06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Metody06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Metody07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Metody07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# List":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyList.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\List01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\List01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\List02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\List02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\List03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\List03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\List04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\List04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\List05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\List05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\List06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\List06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\List07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\List07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
                     case "C# Knihovny":
                         {
-                            if (cislo > 0)
-                            {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyKnihovny.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
-                            }
+                            MessageBox.Show("knivny nemaji priklady");
+
                         }
                         break;
 
                     case "C# Prvočísla":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPrvocisla.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Prvocisla01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Prvocisla01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Prvocisla02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Prvocisla02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Prvocisla03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Prvocisla03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Prvocisla04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Prvocisla04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Prvocisla05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Prvocisla05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Prvocisla06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Prvocisla06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Prvocisla07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Prvocisla07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# Datum A Čas":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatumACas.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatumACas01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatumACas01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatumACas02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatumACas02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatumACas03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatumACas03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatumACas04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatumACas04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatumACas05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatumACas05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatumACas06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatumACas06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatumACas07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatumACas07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# OOP":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyOOP.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\OOP01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\OOP01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\OOP02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\OOP02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\OOP03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\OOP03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\OOP04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\OOP04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\OOP05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\OOP05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\OOP06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\OOP06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\OOP07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\OOP07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# Textové Soubory":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyTextoveSoubory.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\TextoveSoubory07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# Datové Soubory":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatoveSoubory.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\DatoveSoubory07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C# Vyjimky":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyVyjimky.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Vyjimky01.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Vyjimky01.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 2:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Vyjimky02.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Vyjimky02.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 3:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Vyjimky03.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Vyjimky03.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 4:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Formulare04.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Formulare04.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 5:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Vyjimky05.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Vyjimky05.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 6:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Vyjimky06.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Vyjimky06.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                case 7:
+                                    if (System.IO.File.Exists(@"..\..\..\Soubory\CSharp\exe\Vyjimky07.exe"))
+                                    {
+                                        Process.Start(@"..\..\..\Soubory\CSharp\exe\Vyjimky07.exe");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Soubor nebyl nalezen.");
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
@@ -2127,99 +3546,492 @@ namespace ROP_Cabejsek
                 {
                     case "C++ Sekvence":
                         {
-
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySekvence.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+
+                                    break;
+                                case 2:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 5:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 6:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 7:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Selekce":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySelekce.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+
+                                    break;
+                                case 2:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 5:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 6:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 7:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Cykly":
                         {
-
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyCykly.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+
+                                    break;
+                                case 2:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 5:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 6:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 7:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ Switch":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySwitch.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+
+                                    break;
+                                case 2:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 5:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 6:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 7:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
                     case "C++ Printf":
                         {
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrintf.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+
+                                    break;
+                                case 2:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 5:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 6:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 7:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
                     case "C++ N-prvková posloupnost":
                         {
-
-                            if (cislo > 0)
+                            switch (cislo)
                             {
-                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyNposl.txt"))
-                                {
-                                    string s;
-                                    string[] sts;
-                                    s = sr.ReadToEnd();
-                                    sts = s.Split(separators, StringSplitOptions.None);
-                                    textToPrint = sts[cislo - 1];
-                                }
+                                case 1:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+
+                                    break;
+                                case 2:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 5:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 6:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                case 7:
+                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                    {
+                                        using (StreamReader sr = new StreamReader(fs))
+                                        {
+                                            string obsahSouboru = sr.ReadToEnd();
+                                            ShowScrollableMessageBox(obsahSouboru);
+                                        }
+                                    }
+                                    break;
+                                default:
+                                    break;
                             }
+
                         }
                         break;
 
