@@ -14,42 +14,60 @@ using System.Diagnostics;
 
 namespace ROP_Cabejsek
 {
-    public class ScrollableMessageBoxForm : Form
-    {
-        private TextBox textBox;
-        private Button okButton;
+    //public class ScrollableMessageBoxForm : Form
+    //{
+    //    private TextBox textBox;
+    //    private Button okButton;
 
-        public string MessageText
-        {
-            get { return textBox.Text; }
-            set { textBox.Text = value; }
-        }
+    //    public string MessageText
+    //    {
+    //        get { return textBox.Text; }
+    //        set { textBox.Text = value; }
+    //    }
 
-        public ScrollableMessageBoxForm()
-        {
-            InitializeComponents();
-        }
+    //    public ScrollableMessageBoxForm()
+    //    {
+    //        InitializeComponents();
+    //    }
 
-        private void InitializeComponents()
-        {
-            this.Text = "Scrollable MessageBox";
-            this.Size = new System.Drawing.Size(400, 300);
+    //    private void InitializeComponents()
+    //    {
+    //        this.Text = "Scrollable MessageBox";
+    //        this.Size = new System.Drawing.Size(400, 300);
 
-            textBox = new TextBox();
-            textBox.Multiline = true;
-            textBox.ScrollBars = ScrollBars.Vertical;
-            textBox.Dock = DockStyle.Fill;
-            textBox.ReadOnly = true;
+    //        textBox = new TextBox();
+    //        textBox.Multiline = true;
+    //        textBox.ScrollBars = ScrollBars.Vertical;
+    //        textBox.Dock = DockStyle.Fill;
+    //        textBox.ReadOnly = true;
 
-            okButton = new Button();
-            okButton.Text = "OK";
-            okButton.Dock = DockStyle.Bottom;
-            okButton.Click += (sender, e) => this.Close();
+    //        okButton = new Button();
+    //        okButton.Text = "OK";
+    //        okButton.Dock = DockStyle.Bottom;
+    //        okButton.Click += (sender, e) => this.Close();
 
-            this.Controls.Add(textBox);
-            this.Controls.Add(okButton);
-        }
-    }
+    //        this.Controls.Add(textBox);
+    //        this.Controls.Add(okButton);
+    //    }
+
+    //    private void InitializeComponent()
+    //    {
+    //        this.SuspendLayout();
+    //        // 
+    //        // ScrollableMessageBoxForm
+    //        // 
+    //        this.ClientSize = new System.Drawing.Size(284, 261);
+    //        this.Name = "ScrollableMessageBoxForm";
+    //        this.Load += new System.EventHandler(this.ScrollableMessageBoxForm_Load);
+    //        this.ResumeLayout(false);
+
+    //    }
+
+    //    private void ScrollableMessageBoxForm_Load(object sender, EventArgs e)
+    //    {
+
+    //    }
+    //}
     public partial class Form1 : Form
     {
         private void ShowScrollableMessageBox(string text)
@@ -1567,6 +1585,8 @@ namespace ROP_Cabejsek
             }
         }
 
+
+        //spousteni prikladu
         private void button6_Click(object sender, EventArgs e)
         {
             string vybranaHodnota = comboBox2.Text;
@@ -2064,6 +2084,8 @@ namespace ROP_Cabejsek
 
         }
 
+
+        //zobrazeni kodu
         private void button7_Click(object sender, EventArgs e)
         {
             string vybranaHodnota = comboBox2.Text;
@@ -3604,6 +3626,60 @@ namespace ROP_Cabejsek
                 }
 
             }
+        }
+    }
+    public class ScrollableMessageBoxForm : Form
+    {
+        private TextBox textBox;
+        private Button okButton;
+
+        public string MessageText
+        {
+            get { return textBox.Text; }
+            set { textBox.Text = value; }
+        }
+
+        public ScrollableMessageBoxForm()
+        {
+            InitializeComponents();
+        }
+
+        private void InitializeComponents()
+        {
+            this.Text = "Scrollable MessageBox";
+            this.Size = new System.Drawing.Size(400, 300);
+
+            textBox = new TextBox();
+            textBox.Multiline = true;
+            textBox.ScrollBars = ScrollBars.Vertical;
+            textBox.Dock = DockStyle.Fill;
+            textBox.ReadOnly = true;
+
+            okButton = new Button();
+            okButton.Text = "OK";
+            okButton.Dock = DockStyle.Bottom;
+            okButton.Click += (sender, e) => this.Close();
+
+            this.Controls.Add(textBox);
+            this.Controls.Add(okButton);
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // ScrollableMessageBoxForm
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "ScrollableMessageBoxForm";
+            this.Load += new System.EventHandler(this.ScrollableMessageBoxForm_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void ScrollableMessageBoxForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
