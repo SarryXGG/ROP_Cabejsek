@@ -1,3 +1,2 @@
-XXXXXXXXXXXXXXXXX
 Navrhněte projekt, který bude obsahovat metodu JePrvocislo s parametrem typu int. Metoda zjistí, zda zadané číslo je prvočíslo.  Algoritmus v metodě, co nejvíce optimalizujte. Vypište největší prvočíslo menší než 1000.
 Napište metodu, která ověří, že zadané číslo je prvočíslo. Algoritmus v metodě maximálně optimalizujte. Na vstupu je číslo N a N-prvková posloupnost náhodných celých čísel z intervalu 1..120 včetně. Obsahuje posloupnost prvočíslo a jaké je první z nich? Pro zkrácení cyklu procházejícího prvky posloupnosti použijte typ bool.

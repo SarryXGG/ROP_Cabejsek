@@ -1,1 +1,1 @@
-Knihovnu zakládáme jako samostatný projekt, můžeme ji přidat ke stávajícímu řešení, a nebo vytvořit řešení nové. My ji přidáme ke stávajícímu řešení. Novou knihovnu v řešení přidáme jako nový projekt. Klikneme pravým tlačítkem myši na řešení a přidáme knihovnu CelaCisla, která bude obsahovat třídu Operace. Vybereme Přidat - Nový projekt. Do vyhledávacího pole napíšeme knihovna a vybereme Knihovna tříd (.NET Standard).
+Žádné příklady pro knihovny

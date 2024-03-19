@@ -178,14 +178,23 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySekvence.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySekvence.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
+
                         }
                     }
                     break;
@@ -206,14 +215,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySelekce.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySelekce.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -234,14 +251,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyCykly.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyCykly.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -262,17 +287,26 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySwitch.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySwitch.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
+
                 case "C++ Printf":
                     {
                         if (cislo == 0)
@@ -289,14 +323,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrintf.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrintf.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+                            
                         }
                     }
                     break;
@@ -317,14 +359,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyNposl.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyNposl.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -345,14 +395,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPoslZaHodn.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPoslZaHodn.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -373,14 +431,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyJednoDatTyp.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyJednoDatTyp.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+                            
                         }
                     }
                     break;
@@ -401,14 +467,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+                            
                         }
                     }
                     break;
@@ -429,14 +503,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFce.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFce.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -457,18 +539,26 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyGUI.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyGUI.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
-
+                    
                 case "C# Řídící Struktury":
                     {
                         if (cislo == 0)
@@ -485,14 +575,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyRidStruk.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyRidStruk.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -513,14 +611,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPole.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPole.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -541,14 +647,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyString.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyString.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+                            
                         }
                     }
                     break;
@@ -569,14 +683,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyMetody.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyMetody.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+                            
                         }
                     }
                     break;
@@ -597,17 +719,26 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyList.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyList.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
+
                 case "C# Knihovny":
                     {
                         if (cislo == 0)
@@ -624,13 +755,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyKnihovny.txt"))
+
+
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyKnihovny.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
+                            }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
                             }
                         }
                     }
@@ -652,14 +792,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPrvocisla.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPrvocisla.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -680,14 +828,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatumACas.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatumACas.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -708,14 +864,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyOOP.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyOOP.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+                            
                         }
                     }
                     break;
@@ -736,14 +900,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyTextoveSoubory.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyTextoveSoubory.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -764,14 +936,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatoveSoubory.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatoveSoubory.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo-1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -792,14 +972,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyVyjimky.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyVyjimky.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -820,14 +1008,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyFormulare.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                MessageBox.Show(sts[cislo - 1]);
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyFormulare.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    MessageBox.Show(sts[cislo - 1]);
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -891,14 +1087,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySekvence.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySekvence.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -919,14 +1123,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySelekce.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySelekce.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -947,14 +1159,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyCykly.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyCykly.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -975,17 +1195,26 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySwitch.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladySwitch.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
+
                 case "C++ Printf":
                     {
                         if (cislo == 0)
@@ -1002,14 +1231,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrintf.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrintf.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1030,14 +1267,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyNposl.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyNposl.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1058,14 +1303,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPoslZaHodn.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPoslZaHodn.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1086,14 +1339,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyJednoDatTyp.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyJednoDatTyp.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1114,14 +1375,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1142,14 +1411,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFce.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFce.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1170,14 +1447,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyGUI.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyGUI.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1198,14 +1483,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyRidStruk.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyRidStruk.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1226,14 +1519,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPole.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPole.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1254,14 +1555,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyString.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyString.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1282,14 +1591,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyMetody.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyMetody.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1310,17 +1627,26 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyList.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyList.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
+
                 case "C# Knihovny":
                     {
                         if (cislo == 0)
@@ -1337,14 +1663,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyKnihovny.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyKnihovny.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1365,14 +1699,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPrvocisla.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPrvocisla.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1393,14 +1735,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatumACas.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatumACas.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1421,14 +1771,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyOOP.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyOOP.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1449,14 +1807,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyTextoveSoubory.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyTextoveSoubory.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1477,14 +1843,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatoveSoubory.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatoveSoubory.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1505,14 +1879,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyVyjimky.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyVyjimky.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1533,14 +1915,22 @@ namespace ROP_Cabejsek
                         }
                         else if (cislo > 0)
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyFormulare.txt"))
+                            try
                             {
-                                string s;
-                                string[] sts;
-                                s = sr.ReadToEnd();
-                                sts = s.Split(separators, StringSplitOptions.None);
-                                textToPrint = sts[cislo - 1];
+                                using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyFormulare.txt"))
+                                {
+                                    string s;
+                                    string[] sts;
+                                    s = sr.ReadToEnd();
+                                    sts = s.Split(separators, StringSplitOptions.None);
+                                    textToPrint = sts[cislo - 1];
+                                }
                             }
+                            catch (IndexOutOfRangeException)
+                            {
+                                MessageBox.Show("Tato látka zatím neobsahuje příklad číslo:" + cislo + " ");
+                            }
+
                         }
                     }
                     break;
@@ -1563,9 +1953,6 @@ namespace ROP_Cabejsek
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             Font printFont = new Font("Arial", 12);
-            //float leftMargin = e.MarginBounds.Left;
-            //float topMargin = e.MarginBounds.Top;
-            //float linesPerPage = e.MarginBounds.Height / printFont.GetHeight(e.Graphics);
             RectangleF printArea = new RectangleF(e.MarginBounds.Left, e.MarginBounds.Top, e.MarginBounds.Width, e.MarginBounds.Height);
             e.Graphics.DrawString(textToPrint, printFont, Brushes.Black, printArea);
 
@@ -1622,6 +2009,7 @@ namespace ROP_Cabejsek
                 default:
                     break;
             }
+
             if (cislo != 0)
             {
                 switch (vybraneTema)
@@ -2921,6 +3309,7 @@ namespace ROP_Cabejsek
 
                         }
                         break;
+
                     case "C# Knihovny":
                         {
                             MessageBox.Show("knivny nemaji priklady");
@@ -3540,1903 +3929,1910 @@ namespace ROP_Cabejsek
                 default:
                     break;
             }
-            if (cislo != 0)
+            try
             {
-                switch (vybraneTema)
+                if (cislo != 0)
                 {
-                    case "C++ Sekvence":
-                        {
-                            switch (cislo)
+                    switch (vybraneTema)
+                    {
+                        case "C++ Sekvence":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C++ Selekce":
-                        {
-                            switch (cislo)
+                        case "C++ Selekce":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C++ Cykly":
-                        {
-                            switch (cislo)
+                        case "C++ Cykly":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C++ Switch":
-                        {
-                            switch (cislo)
+                        case "C++ Switch":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
-
-                        }
-                        break;
-                    case "C++ Printf":
-                        {
-                            switch (cislo)
+                            break;
+                        case "C++ Printf":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C++ N-prvková posloupnost":
-                        {
-                            switch (cislo)
+                        case "C++ N-prvková posloupnost":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C++ Posloupnost Zakončená Hodnotou":
-                        {
-                            switch (cislo)
+                        case "C++ Posloupnost Zakončená Hodnotou":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C++ Jednoduché Datové Typy":
-                        {
-                            switch (cislo)
+                        case "C++ Jednoduché Datové Typy":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C++ Pole":
-                        {
-                            switch (cislo)
+                        case "C++ Pole":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C++ Funkce":
-                        {
-                            switch (cislo)
+                        case "C++ Funkce":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# GUI":
-                        {
-                            switch (cislo)
+                        case "C# GUI":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\GUI07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# Řídící Struktury":
-                        {
-                            switch (cislo)
+                        case "C# Řídící Struktury":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\RidStruk07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# Pole":
-                        {
-                            switch (cislo)
+                        case "C# Pole":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Pole07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# String":
-                        {
-                            switch (cislo)
+                        case "C# String":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\String07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# Metody":
-                        {
-                            switch (cislo)
+                        case "C# Metody":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Metody07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# List":
-                        {
-                            switch (cislo)
+                        case "C# List":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\List07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
-
-                        }
-                        break;
-                    case "C# Knihovny":
-                        {
-                            MessageBox.Show("u knihoven kod zobrazit nelze");
-                        }
-                        break;
-
-                    case "C# Prvočísla":
-                        {
-                            switch (cislo)
+                            break;
+                        case "C# Knihovny":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
-                                        {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
-                                        }
-                                    }
-
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
-                                        {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
-                                        }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
-                                        {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
-                                        }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
-                                        {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
-                                        }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
-                                        {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
-                                        }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
-                                        {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
-                                        }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
-                                        {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
-                                        }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                MessageBox.Show("u knihoven kod zobrazit nelze");
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# Datum A Čas":
-                        {
-                            switch (cislo)
+                        case "C# Prvočísla":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Prvocisla07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# OOP":
-                        {
-                            switch (cislo)
+                        case "C# Datum A Čas":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatumACas07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# Textové Soubory":
-                        {
-                            switch (cislo)
+                        case "C# OOP":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\OOP07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# Datové Soubory":
-                        {
-                            switch (cislo)
+                        case "C# Textové Soubory":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\TextoveSoubory07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
-
-                    case "C# Vyjimky":
-                        {
-                            switch (cislo)
+                        case "C# Datové Soubory":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky01\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
 
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\DatoveSoubory07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
-                        }
-                        break;
+                            break;
 
-                    case "C# Formuláře":
-                        {
-                            switch (cislo)
+                        case "C# Vyjimky":
                             {
-                                case 1:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare01\Form1.cs", FileMode.Open,FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky01\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
+
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        {
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
+                                        }
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        {
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
+                                        }
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        {
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
+                                        }
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        {
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
+                                        }
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        {
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
+                                        }
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Vyjimky07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        {
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
+                                        }
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }
+                            break;
+
+                        case "C# Formuláře":
+                            {
+                                switch (cislo)
+                                {
+                                    case 1:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare01\Form1.cs", FileMode.Open,FileAccess.Read))
+                                        {
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
+                                        }
                                    
-                                    break;
-                                case 2:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare02\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 2:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare02\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 3:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare03\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 3:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare03\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 4:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare04\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 4:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare04\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 5:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare05\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 5:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare05\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 6:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare06\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 6:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare06\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 7:
-                                    using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare07\Form1.cs", FileMode.Open, FileAccess.Read))
-                                    {
-                                        using (StreamReader sr = new StreamReader(fs))
+                                        break;
+                                    case 7:
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CSharp\kod\Formulare07\Form1.cs", FileMode.Open, FileAccess.Read))
                                         {
-                                            string obsahSouboru = sr.ReadToEnd();
-                                            ShowScrollableMessageBox(obsahSouboru);
+                                            using (StreamReader sr = new StreamReader(fs))
+                                            {
+                                                string obsahSouboru = sr.ReadToEnd();
+                                                ShowScrollableMessageBox(obsahSouboru);
+                                            }
                                         }
-                                    }
-                                    break;
-                                default:
-                                    break;
+                                        break;
+                                    default:
+                                        break;
+                                }
+
                             }
+                            break;
 
-                        }
-                        break;
+                        default:
+                            break;
+                    }
 
-                    default:
-                        break;
                 }
-
+            }
+            catch (DirectoryNotFoundException)
+            {
+                MessageBox.Show("Tato látka zatím neobsahuje kód pro příklad číslo: " + cislo + " ");
             }
         }
     }

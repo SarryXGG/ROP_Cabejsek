@@ -1,4 +1,3 @@
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Na formulář umístěte pouze jedno tlačítko, které bude přepínat červený formulář na zelený a zpět, současně bude přepisovat a přebarvovat text na tlačítku a přepisovat popisek formuláře červený na zelený a naopak.
 Spočítej povrch a objem válce. Vstup zadávej do 2 TextBoxů, výstup s popiskem do Labelů. Výpočet provede tlačítko. (Zvol si jednotku! – cm, mm, m, dm, …).
 Načti částku peněz v celých tisících. Spočítej kolik je potřeba 5000 bankovek, kolik 2000 bankovek, kolik 1000 bankovek. Vstup zadej do TextBoxu. Výstup do 3. Labelů s popiskem.
