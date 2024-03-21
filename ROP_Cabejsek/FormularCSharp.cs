@@ -34,19 +34,18 @@ namespace ROP_Cabejsek
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int verticalSpacing = 30; // Zvýšil jsem mezera mezi labely pro lepší čitelnost
-            int currentTop = 10; // Počáteční vertikální pozice
+            int verticalSpacing = 30; 
+            int currentTop = 10; 
             for (int i = formPriklady.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = formPriklady.Controls[i];
 
-                // Pokud je ovládací prvek TextBox nebo Label, odstraň jej
                 if (control is TextBox || control is Label)
                 {
                     formPriklady.Controls.Remove(control);
                 }
             }
-            // Aktualizuje a překresluje formulář
+            
             formPriklady.Refresh();
 
             using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeorieGUI.txt"))
@@ -55,14 +54,14 @@ namespace ROP_Cabejsek
                 if (!srT.EndOfStream)
                 {
                     s = srT.ReadToEnd();
-                    //pridani teorie na zacatek label
+                    
                     Label labelTeorie = new Label();
                     labelTeorie.Text = "Teorie";
                     labelTeorie.AutoSize = true;
                     labelTeorie.Top = currentTop;
                     formPriklady.Controls.Add(labelTeorie);
                     currentTop += verticalSpacing;
-                    //pridani tb s teorii
+                    
                     TextBox tba = new TextBox();
                     tba.Multiline = true;
                     tba.ScrollBars = ScrollBars.Vertical;
@@ -98,14 +97,11 @@ namespace ROP_Cabejsek
 
 
                         TextBox tb = new TextBox();
-                        tb.Multiline = true; // Použití víceřádkového textového pole
-                        tb.ScrollBars = ScrollBars.Vertical; // Přidání svislého skrolování, pokud text přesahuje
+                        tb.Multiline = true; 
+                        tb.ScrollBars = ScrollBars.Vertical; 
                         tb.Text = sts[i];
-
-                        // Nastavení šířky textového pole na šířku formuláře s odčtením mezery (např. 20)
                         tb.Width = formPriklady.ClientSize.Width - 20;
-
-                        tb.Height = 60; // Nastavení výšky textového pole
+                        tb.Height = 60; 
                         tb.Top = currentTop;
                         tb.ReadOnly = true;
 

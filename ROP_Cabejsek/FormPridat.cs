@@ -469,6 +469,11 @@ namespace ROP_Cabejsek
                 MessageBox.Show("neni vybrano kam se ma priklad zapsat");
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 
     }

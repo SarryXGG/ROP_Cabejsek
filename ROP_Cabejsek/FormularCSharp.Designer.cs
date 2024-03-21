@@ -56,11 +56,9 @@
             // 
             // button15
             // 
-            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.button15.Location = new System.Drawing.Point(12, 480);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(310, 33);
+            this.button15.Size = new System.Drawing.Size(310, 30);
             this.button15.TabIndex = 28;
             this.button15.Text = "Formuláře";
             this.button15.UseVisualStyleBackColor = true;
@@ -190,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 561);
+            this.ClientSize = new System.Drawing.Size(334, 522);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
