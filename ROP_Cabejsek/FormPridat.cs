@@ -210,14 +210,14 @@ namespace ROP_Cabejsek
 
                     case "C# GUI":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyGUI.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyGUI.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyGUI.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyGUI.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -228,14 +228,14 @@ namespace ROP_Cabejsek
 
                     case "C# Řídící Struktury":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyRidStruk.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyRidStruk.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyRidStruk.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyRidStruk.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -246,14 +246,14 @@ namespace ROP_Cabejsek
 
                     case "C# Pole":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPole.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyPole.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyPole.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -264,14 +264,14 @@ namespace ROP_Cabejsek
 
                     case "C# String":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyString.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyString.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyString.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyString.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -282,14 +282,14 @@ namespace ROP_Cabejsek
 
                     case "C# Metody":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyMetody.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyMetody.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyMetody.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyMetody.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -300,14 +300,14 @@ namespace ROP_Cabejsek
 
                     case "C# List":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyList.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyList.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyList.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyList.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -317,14 +317,14 @@ namespace ROP_Cabejsek
                         break;
                     case "C# Knihovny":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyKnihovny.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyKnihovny.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyKnihovny.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyKnihovny.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -335,14 +335,14 @@ namespace ROP_Cabejsek
 
                     case "C# Prvočísla":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyPrvocisla.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyPrvocisla.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyPrvocisla.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyPrvocisla.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -353,14 +353,14 @@ namespace ROP_Cabejsek
 
                     case "C# Datum A Čas":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyDatumACas.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatumACas.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyDatumACas.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyDatumACas.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -371,14 +371,14 @@ namespace ROP_Cabejsek
 
                     case "C# OOP":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyOOP.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyOOP.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyOOP.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyOOP.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -389,14 +389,14 @@ namespace ROP_Cabejsek
 
                     case "C# Textové Soubory":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyTextoveSoubory.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyTextoveSoubory.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyTextoveSoubory.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyTextoveSoubory.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -407,14 +407,14 @@ namespace ROP_Cabejsek
 
                     case "C# Datové Soubory":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyDatoveSoubory.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyDatoveSoubory.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyDatoveSoubory.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyDatoveSoubory.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -425,14 +425,14 @@ namespace ROP_Cabejsek
 
                     case "C# Vyjimky":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyVyjimky.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyVyjimky.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyVyjimky.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyVyjimky.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
@@ -443,14 +443,14 @@ namespace ROP_Cabejsek
 
                     case "C# Formuláře":
                         {
-                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CPP\PrikladyFormulare.txt"))
+                            using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\CSharp\PrikladyFormulare.txt"))
                             {
                                 while (!sr.EndOfStream)
                                 {
                                     pomoc = sr.ReadToEnd();
                                 }
                             }
-                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CPP\PrikladyFormulare.txt"))
+                            using (StreamWriter sw = new StreamWriter(@"..\..\..\Soubory\CSharp\PrikladyFormulare.txt"))
                             {
                                 string s = textBox1.Text;
                                 sw.Write(pomoc);
