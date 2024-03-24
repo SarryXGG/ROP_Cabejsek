@@ -1,0 +1,12 @@
+ cout << "Zadavejte nenulova cela cisla; nula sekvenci ukonci:\n";
+            cin >> cislo;
+            while (cislo != XXX)
+            {
+                soucin *= cislo;
+                if (cislo % 2 == 0)
+                {
+                    pocetSud++;
+                    soucetSud += cislo;
+                }
+                cin >> cislo;
+            }

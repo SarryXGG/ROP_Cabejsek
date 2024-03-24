@@ -5835,114 +5835,129 @@ namespace ROP_Cabejsek
                 MessageBox.Show("Tato látka zatím neobsahuje kód pro příklad číslo: " + cislo + " ");
             }
         }
+        public int promenna;
+
+        public void SetPromenna(int value)
+        {
+            promenna = value;
+        }
+        public int GetPromenna()
+        {
+            return promenna;
+        }
 
         private void button8_Click(object sender, EventArgs e)
         {
             FormularTest formularTest = new FormularTest();
             string vybraneTema = comboBox1.Text;
-            MessageBox.Show("Do textboxu doplňte slovo které patří na místo XXXX v kódu, který je zobrazen níže");
+            MessageBox.Show("Do textboxu doplňte slovo které patří na místo XXX v kódu, který je zobrazen níže");
 
             switch (vybraneTema)
             {
-                case "C++ Sekvence":
+                case "C++ Sekvence"://1
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C++ Selekce":
+                case "C++ Selekce"://2
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C++ Cykly":
+                case "C++ Cykly"://3
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C++ Switch":
+                case "C++ Switch"://4
                     formularTest.textBox2.Text = "";
                     break;
-                case "C++ Printf":
-                    formularTest.textBox2.Text = "";
-                    break;
-
-                case "C++ N-prvková Posloupnost":
+                case "C++ Printf"://5
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C++ Posloupnost Zakončená Hodnotou":
+                case "C++ N-prvková Posloupnost"://6
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C++ Jednoduché Datové Typy":
+                case "C++ Posloupnost Zakončená Hodnotou"://7
+                    using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\Test\PoslZaHodn.txt"))
+                    {
+                        SetPromenna(7);
+                        string obsahSouboru = sr.ReadToEnd();
+                        formularTest.textBox2.Text = obsahSouboru;
+                    }
+                    break;
+
+                case "C++ Jednoduché Datové Typy"://8
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C++ Pole":
+                case "C++ Pole"://9
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C++ Funkce":
+                case "C++ Funkce"://10
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# GUI":
+                case "C# GUI"://11
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Řídící Struktury":
+                case "C# Řídící Struktury"://12
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Pole":
+                case "C# Pole"://13
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# String":
+                case "C# String"://14
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Metody":
+                case "C# Metody"://15
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# List":
+                case "C# List"://16
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Knihovny":
+                case "C# Knihovny"://--
                     MessageBox.Show("knihovny neobsahují příklady tím pádem ani testy");
                     break;
 
-                case "C# Prvočísla":
+                case "C# Prvočísla"://17
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Datum A Čas":
+                case "C# Datum A Čas"://18
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# OOP":
+                case "C# OOP"://19
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Textové Soubory":
+                case "C# Textové Soubory"://20
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Datové Soubory":
+                case "C# Datové Soubory"://21
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Vyjimky":
+                case "C# Vyjimky"://22
                     formularTest.textBox2.Text = "";
                     break;
 
-                case "C# Formuláře":
+                case "C# Formuláře"://23
                     formularTest.textBox2.Text = "";
                     break;
 
                 default:
                     break;
             }
-
+            formularTest.ShowDialog();
         }
     }
 
