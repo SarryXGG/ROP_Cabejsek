@@ -1,0 +1,4 @@
+Máme-li na vstupu posloupnost zakončenou hodnotou, musíme znát zakončovací hodnotu. Tuto zakončovací hodnotu musíme také načíst, ale je to jen „znamení“, že je vstup u konce, nesmíme ji zpracovat stejným způsobem jako prvky posloupnosti.
+Např. posloupnost nenulových čísel zakončená nulou může vypadat na vstupu takto:
+(5, -1, -50, 63, 0), přičemž hodnoty 5, -1, -50, 63 jsou prvky posloupnosti, ale jakmile načteme hodnotu 0, tuto už nezpracujeme, do posloupnosti nepatří.
+Pro tyto posloupnosti je vhodnější cyklus while. Jeden vstup načteme před cyklem, v podmínce cyklu je ověření, zda načtená hodnota není hodnotou zakončovací a pak ji můžeme v těle cyklu zpracovat. Na konci těla cyklu je potřeba načíst další hodnotu, která se bude zpracovávat až v dalším opakování cyklu. Takto zakončovací hodnota cyklus ukončí, aniž by se zpracovala s ostatními prvky posloupnosti.

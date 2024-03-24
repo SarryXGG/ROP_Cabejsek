@@ -343,7 +343,7 @@ namespace ROP_Cabejsek
                     }
                     break;
 
-                case "C++ N-prvková posloupnost":
+                case "C++ N-prvková Posloupnost":
                     {
                         if (cislo == 0)
                         {
@@ -1251,7 +1251,7 @@ namespace ROP_Cabejsek
                     }
                     break;
 
-                case "C++ N-prvková posloupnost":
+                case "C++ N-prvková Posloupnost":
                     {
                         if (cislo == 0)
                         {
@@ -2419,7 +2419,7 @@ namespace ROP_Cabejsek
                         }
                         break;
 
-                    case "C++ N-prvková posloupnost":
+                    case "C++ N-prvková Posloupnost":
                         {
                             switch (cislo)
                             {
@@ -3940,7 +3940,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -3951,7 +3951,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -3961,7 +3961,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -3971,7 +3971,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -3981,7 +3981,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -3991,7 +3991,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4001,7 +4001,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Sekvence07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4022,7 +4022,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4033,7 +4033,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4043,7 +4043,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4053,7 +4053,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4063,7 +4063,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4073,7 +4073,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4083,7 +4083,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Selekce07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4104,7 +4104,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4115,7 +4115,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4125,7 +4125,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4135,7 +4135,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4145,7 +4145,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4155,7 +4155,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4165,7 +4165,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Cykly07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4186,7 +4186,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4197,7 +4197,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4207,7 +4207,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4217,7 +4217,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4227,7 +4227,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4237,7 +4237,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4247,7 +4247,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Switch07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4267,7 +4267,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4278,7 +4278,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4288,7 +4288,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4298,7 +4298,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4308,7 +4308,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4318,7 +4318,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4328,7 +4328,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Printf07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4344,12 +4344,12 @@ namespace ROP_Cabejsek
                             }
                             break;
 
-                        case "C++ N-prvková posloupnost":
+                        case "C++ N-prvková Posloupnost":
                             {
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4360,7 +4360,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4370,7 +4370,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4380,7 +4380,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4390,7 +4390,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4400,7 +4400,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4410,7 +4410,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Nposl07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4431,7 +4431,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4442,7 +4442,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4452,7 +4452,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4462,7 +4462,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4472,7 +4472,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4482,7 +4482,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4492,7 +4492,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\PoslZakHodn07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4513,7 +4513,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4524,7 +4524,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4534,7 +4534,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4544,7 +4544,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4554,7 +4554,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4564,7 +4564,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4574,7 +4574,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\JedDatTyp07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4595,7 +4595,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4606,7 +4606,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4616,7 +4616,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4626,7 +4626,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4636,7 +4636,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4646,7 +4646,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4656,7 +4656,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Pole07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4677,7 +4677,7 @@ namespace ROP_Cabejsek
                                 switch (cislo)
                                 {
                                     case 1:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce01\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce01\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4688,7 +4688,7 @@ namespace ROP_Cabejsek
 
                                         break;
                                     case 2:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce02\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce02\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4698,7 +4698,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 3:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce03\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce03\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4708,7 +4708,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 4:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce04\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce04\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4718,7 +4718,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 5:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce05\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce05\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4728,7 +4728,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 6:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce06\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce06\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -4738,7 +4738,7 @@ namespace ROP_Cabejsek
                                         }
                                         break;
                                     case 7:
-                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce07\Form1.cs", FileMode.Open, FileAccess.Read))
+                                        using (FileStream fs = new FileStream(@"..\..\..\Soubory\CPP\kod\Funkce07\kod.cpp", FileMode.Open, FileAccess.Read))
                                         {
                                             using (StreamReader sr = new StreamReader(fs))
                                             {
@@ -5835,7 +5835,117 @@ namespace ROP_Cabejsek
                 MessageBox.Show("Tato látka zatím neobsahuje kód pro příklad číslo: " + cislo + " ");
             }
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FormularTest formularTest = new FormularTest();
+            string vybraneTema = comboBox1.Text;
+            MessageBox.Show("Do textboxu doplňte slovo které patří na místo XXXX v kódu, který je zobrazen níže");
+
+            switch (vybraneTema)
+            {
+                case "C++ Sekvence":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C++ Selekce":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C++ Cykly":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C++ Switch":
+                    formularTest.textBox2.Text = "";
+                    break;
+                case "C++ Printf":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C++ N-prvková Posloupnost":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C++ Posloupnost Zakončená Hodnotou":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C++ Jednoduché Datové Typy":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C++ Pole":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C++ Funkce":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# GUI":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Řídící Struktury":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Pole":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# String":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Metody":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# List":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Knihovny":
+                    MessageBox.Show("knihovny neobsahují příklady tím pádem ani testy");
+                    break;
+
+                case "C# Prvočísla":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Datum A Čas":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# OOP":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Textové Soubory":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Datové Soubory":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Vyjimky":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                case "C# Formuláře":
+                    formularTest.textBox2.Text = "";
+                    break;
+
+                default:
+                    break;
+            }
+
+        }
     }
+
     public class ScrollableMessageBoxForm : Form
     {
         private TextBox textBox;

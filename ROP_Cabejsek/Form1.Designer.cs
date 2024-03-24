@@ -38,15 +38,16 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 35);
+            this.button1.Location = new System.Drawing.Point(0, 37);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(311, 310);
+            this.button1.Size = new System.Drawing.Size(355, 310);
             this.button1.TabIndex = 1;
             this.button1.Text = "C++";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,9 +57,9 @@
             // 
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(310, 35);
+            this.button2.Location = new System.Drawing.Point(354, 37);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(306, 310);
+            this.button2.Size = new System.Drawing.Size(355, 310);
             this.button2.TabIndex = 2;
             this.button2.Text = "C#";
             this.button2.UseVisualStyleBackColor = true;
@@ -92,7 +93,7 @@
             "C# Datové Soubory",
             "C# Vyjimky",
             "C# Formuláře"});
-            this.comboBox1.Location = new System.Drawing.Point(0, 6);
+            this.comboBox1.Location = new System.Drawing.Point(0, 8);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(245, 21);
             this.comboBox1.TabIndex = 3;
@@ -110,14 +111,14 @@
             "Příklad 5",
             "Příklad 6",
             "Příklad 7"});
-            this.comboBox2.Location = new System.Drawing.Point(251, 6);
+            this.comboBox2.Location = new System.Drawing.Point(250, 8);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(80, 21);
             this.comboBox2.TabIndex = 4;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(337, 2);
+            this.button3.Location = new System.Drawing.Point(336, 6);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 25);
             this.button3.TabIndex = 5;
@@ -127,7 +128,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(393, 2);
+            this.button4.Location = new System.Drawing.Point(392, 6);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(50, 25);
             this.button4.TabIndex = 6;
@@ -143,7 +144,7 @@
             // 
             this.button5.Location = new System.Drawing.Point(0, 349);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(616, 35);
+            this.button5.Size = new System.Drawing.Size(709, 35);
             this.button5.TabIndex = 7;
             this.button5.Text = "Přidat příklad";
             this.button5.UseVisualStyleBackColor = true;
@@ -151,7 +152,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(448, 2);
+            this.button6.Location = new System.Drawing.Point(448, 6);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(88, 25);
             this.button6.TabIndex = 8;
@@ -161,7 +162,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(542, 3);
+            this.button7.Location = new System.Drawing.Point(542, 6);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(74, 25);
             this.button7.TabIndex = 9;
@@ -169,12 +170,23 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(622, 6);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(87, 25);
+            this.button8.TabIndex = 10;
+            this.button8.Text = "Zkušební test";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(615, 385);
+            this.ClientSize = new System.Drawing.Size(708, 387);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -204,6 +216,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
