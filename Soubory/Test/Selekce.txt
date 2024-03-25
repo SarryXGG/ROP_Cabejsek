@@ -1,0 +1,75 @@
+int main()
+{
+	srand((unsigned)time(NULL));
+	char znak;	
+
+	do
+	{
+		cout << "M - Mocnina (nasobenim)" << endl;
+		cout << "S - Ciferny soucet" << endl;
+		cout << "K - Konec" << endl;
+		cout << "Vyber si jednu z moznosti: ";
+		cin >> znak;
+
+		XXX (X2X)
+		{
+		case 'M':
+		{
+			double a = 1 + (10 - 1) * (double)rand() / (RAND_MAX + 1);
+			int n = -5 + rand() % (5 - -5 + 1);
+			double mocnina = 1;
+			bool jeZaporne = false;
+
+			cout << "Realne vygenerovane cislo a je: " << a << endl;
+			cout << "Cele vygenerovane cislo n je: " << n << endl;
+			if (n < 0) 
+			{
+				n = abs(n);
+				jeZaporne = true;
+			}
+			for (int i  = 0; i < n; i++)
+			{
+				mocnina *= a;
+			}
+			if (jeZaporne) mocnina = 1 / mocnina;
+			cout << "Mocnina cisla a umocneneho na n je: " << mocnina << endl;
+
+			cout << endl;
+			break;
+		}
+
+		case 'S':
+		{
+			int n;
+			int cifSoucet = 0;
+
+			cout << "Zadej Cele nezaporne cislo n: ";
+			cin >> n;
+			while (n > 0) 
+			{
+				int cifra = n % 10;
+				cifSoucet += cifra;
+				n /= 10;
+			}
+			cout << "Ciferny soucet pro zadane cislo n je: " << cifSoucet <<  endl;
+
+			cout << endl;
+			break;
+		}
+
+		case 'K': 
+		{
+			cout << "Konec programu...";
+
+			break;
+		}
+
+		default:
+		{
+			cout << "Chybne zadany vstup\n\n";
+
+			break;
+		}			
+		}
+	} while (znak != 'K');
+}

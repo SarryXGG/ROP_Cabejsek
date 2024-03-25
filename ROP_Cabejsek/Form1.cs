@@ -5852,11 +5852,21 @@ namespace ROP_Cabejsek
             switch (vybraneTema)
             {
                 case "C++ Sekvence"://1
-                    formularTest.textBox2.Text = "";
+                    using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\Test\Sekvence.txt"))
+                    {
+                        SetPromenna(1);
+                        string obsahSouboru = sr.ReadToEnd();
+                        formularTest.textBox2.Text = obsahSouboru;
+                    }
                     break;
 
                 case "C++ Selekce"://2
-                    formularTest.textBox2.Text = "";
+                    using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\Test\Selekce.txt"))
+                    {
+                        SetPromenna(2);
+                        string obsahSouboru = sr.ReadToEnd();
+                        formularTest.textBox2.Text = obsahSouboru;
+                    }
                     break;
 
                 case "C++ Cykly"://3

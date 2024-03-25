@@ -1,0 +1,16 @@
+int main() {
+    int a, b, c;
+    double prumer;
+
+    cout << "Zadejte hodnotu a: ";
+    cin >> a;
+    cout << "Zadejte hodnotu b: ";
+    cin >> b;
+    cout << "Zadejte hodnotu c: ";
+    cin >> c;
+
+    prumer = (a + XXX + c) / X2X;
+
+    cout << "Aritmetický prùmìr èísel " << a << ", " << b << " a " << c << " je: " << prumer << endl;
+
+    return 0;

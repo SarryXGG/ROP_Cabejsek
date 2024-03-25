@@ -44,9 +44,25 @@ namespace ROP_Cabejsek
             switch (hodnotaPromenne)
             {
                 case 1:
+                    if (vysledek == "b 3")
+                    {
+                        MessageBox.Show("Ano správně");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Špatně XXX a X2X je 'b 3' ");
+                    }
                     break;
 
                 case 2:
+                    if (vysledek == "switch znak")
+                    {
+                        MessageBox.Show("Ano správně");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Špatně XXX a X2X je 'switch znak' ");
+                    }
                     break;
 
                 case 3:
