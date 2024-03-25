@@ -36,20 +36,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(230, 10);
+            this.textBox1.Location = new System.Drawing.Point(577, 9);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 20);
+            this.textBox1.Size = new System.Drawing.Size(130, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(-3, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 13);
+            this.label1.Size = new System.Drawing.Size(574, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Zde doplňte jaký řetězec patří místo XXXX";
+            this.label1.Text = "Zde doplňte jaký řetězec patří místo XXX. Pokud kód obsahuje XXX i X2X výsledek z" +
+    "apište v tvaru \"XXX(mezera)X2X\".";
             // 
             // textBox2
             // 
@@ -63,7 +64,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(377, 7);
+            this.button1.Location = new System.Drawing.Point(713, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;

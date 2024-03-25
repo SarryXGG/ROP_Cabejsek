@@ -1,0 +1,18 @@
+int n;
+int i = 0;
+double soucetPrvku = 0;
+
+cout << "Zadej cele cislo n: ";
+cin >> n;
+if (n > 0)
+{
+    do
+    {
+        double genCislo = 10 + (100 - 10) * (double)rand() / (RAND_MAX + 1);
+        soucetPrvku += genCislo;
+
+        i++;
+        cout << genCislo << endl;
+    } XXX (i < X2X);
+}
+cout << "Soucet vsech prvku posloupnosti je: " << soucetPrvku << endl << endl;

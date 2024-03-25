@@ -30,12 +30,58 @@ namespace ROP_Cabejsek
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
-            int hodnotaPromenne = form1 != null ? form1.GetPromenna() : 0;
-            string vysledek = textBox1.Text;
-
-            if (hodnotaPromenne == 7 && vysledek == "0")
+            int hodnotaPromenne = 0;
+            if (form1 != null)
             {
-                MessageBox.Show("Ano správně");
+                hodnotaPromenne = form1.GetPromenna();
+            }
+            else
+            {
+                hodnotaPromenne = 0;
+            }
+            string vysledek = textBox1.Text.Trim();
+
+            switch (hodnotaPromenne)
+            {
+                case 1:
+                    break;
+
+                case 2:
+                    break;
+
+                case 3:
+                    break;
+
+                case 4:
+                    break;
+
+                case 5:
+                    break;
+
+                case 6:
+                    if (vysledek == "while n")
+                    {
+                        MessageBox.Show("Ano správně");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Špatně XXX a X2X je 'while n' ");
+                    }
+                    break;
+
+                case 7:
+                    if (vysledek == "0")
+                    {
+                        MessageBox.Show("Ano správně");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Špatně XXX je '0' ");
+                    }
+                    break;
+
+                default:
+                    break;
             }
         }
     }

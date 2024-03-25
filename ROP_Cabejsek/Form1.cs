@@ -1690,11 +1690,8 @@ namespace ROP_Cabejsek
                             using (StreamReader srT = new StreamReader(@"..\..\..\Soubory\CSharp\TeoriePrvocisla.txt"))
                             {
                                 string s;
-                                if (!srT.EndOfStream)
-                                {
-                                    s = srT.ReadToEnd();
-                                    textToPrint = s;
-                                }
+                                s = srT.ReadToEnd();
+                                textToPrint = s;
                             }
                         }
                         else if (cislo > 0)
@@ -3312,7 +3309,7 @@ namespace ROP_Cabejsek
 
                     case "C# Knihovny":
                         {
-                            MessageBox.Show("knivny nemaji priklady");
+                            MessageBox.Show("knihovny nemaji priklady");
 
                         }
                         break;
@@ -5869,12 +5866,18 @@ namespace ROP_Cabejsek
                 case "C++ Switch"://4
                     formularTest.textBox2.Text = "";
                     break;
+
                 case "C++ Printf"://5
                     formularTest.textBox2.Text = "";
                     break;
 
                 case "C++ N-prvková Posloupnost"://6
-                    formularTest.textBox2.Text = "";
+                    using (StreamReader sr = new StreamReader(@"..\..\..\Soubory\Test\Nposl.txt"))
+                    {
+                        SetPromenna(6);
+                        string obsahSouboru = sr.ReadToEnd();
+                        formularTest.textBox2.Text = obsahSouboru;
+                    }
                     break;
 
                 case "C++ Posloupnost Zakončená Hodnotou"://7
