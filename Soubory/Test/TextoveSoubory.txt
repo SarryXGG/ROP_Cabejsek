@@ -1,0 +1,13 @@
+try
+        {
+            // Zapisování do souboru
+            using (XXX writer = new XXX(path))
+            {
+                writer.WriteLine(content);
+            }
+            Console.WriteLine("Text byl úspěšně zapsán do souboru.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Chyba při zápisu do souboru: " + ex.Message);
+        }

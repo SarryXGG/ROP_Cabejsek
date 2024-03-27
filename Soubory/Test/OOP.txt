@@ -1,0 +1,9 @@
+ public string Owner { XXX; X2X; }
+    public double Balance { get; private set; }
+
+    // Konstruktor pro vytvoření nového bankovního účtu
+    public BankAccount(string owner, double initialBalance)
+    {
+        Owner = owner;
+        Balance = initialBalance;
+    }

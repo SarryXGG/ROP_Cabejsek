@@ -1,0 +1,19 @@
+while (number > 1)
+        {
+            bool isPrime = true;
+            for (int i = 2; i <= Math.XXX(number); i++)
+            {
+                if (number % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime)
+            {
+                largestPrime = number;
+                break; // Jakmile najdeme prvočíslo, ukončíme cyklus
+            }
+            number--;
+        }

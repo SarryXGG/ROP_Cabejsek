@@ -1,0 +1,35 @@
+int main() {
+    int day;
+
+    printf("Zadejte cislo dne v tydnu (1-7): ");
+    scanf("%XXX", X2Xday);
+
+    switch (day) {
+        case 1:
+            printf("Pondeli\n");
+            break;
+        case 2:
+            printf("Utery\n");
+            break;
+        case 3:
+            printf("Streda\n");
+            break;
+        case 4:
+            printf("Ctvrtek\n");
+            break;
+        case 5:
+            printf("Patek\n");
+            break;
+        case 6:
+            printf("Sobota\n");
+            break;
+        case 7:
+            printf("Nedele\n");
+            break;
+        default:
+            printf("Neplatny den!\n");
+            break;
+    }
+
+    return 0;
+}

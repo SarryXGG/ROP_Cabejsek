@@ -1,0 +1,10 @@
+int soucet(int a, int b) {
+    XXX a + b; // Návratová hodnota je součet parametrů a a b
+}
+
+int main() {
+    // Volání funkce soucet s argumenty 5 a 3 a vypsání výsledku
+    cout << "Soucet 5 a 3 je: " << soucet(5, 3) << endl;
+
+    return 0;
+}

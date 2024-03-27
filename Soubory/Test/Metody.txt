@@ -1,0 +1,21 @@
+// Metoda pro výpočet součtu dvou čísel
+        static XXX Add(int a, int b)
+        {
+            return a + b;
+        }
+
+        // Metoda pro výpis textu
+        static X2X PrintMessage(string message)
+        {
+            Console.WriteLine("Zpráva: " + message);
+        }
+
+        static void Main(string[] args)
+        {
+            // Použití metody pro výpočet součtu
+            int sum = Add(5, 3);
+            Console.WriteLine("Součet: " + sum);
+
+            // Použití metody pro výpis textu
+            PrintMessage("Toto je zpráva z metody.");
+        }

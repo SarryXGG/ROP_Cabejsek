@@ -1,0 +1,8 @@
+ int numbers[XXX] = {10, 20, 30, 40, 50};
+
+    // Přístup k prvkům pole pomocí indexů
+    cout << "Prvni prvek pole: " << numbers[0] << endl;
+    cout << "Druhy prvek pole: " << numbers[1] << endl;
+    cout << "Treti prvek pole: " << numbers[2] << endl;
+    cout << "Ctvrty prvek pole: " << numbers[3] << endl;
+    cout << "Paty prvek pole: " << numbers[4] << endl;

@@ -1,0 +1,13 @@
+XXX
+        {
+            // Čtení ze souboru
+            using (StreamReader reader = new StreamReader(path))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+        X2X (Exception ex)
+        {
+            Console.WriteLine("Chyba při čtení ze souboru: " + ex.Message);
+            return null;
+        }

@@ -1,0 +1,35 @@
+int main() {
+    int day;
+
+    cout << "Zadejte cislo dne v tydnu (1-7): ";
+    cin >> XXX;
+
+    switch (day) {
+        X2X 1:
+            cout << "Pondeli" << endl;
+            break;
+        case 2:
+            cout << "Utery" << endl;
+            break;
+        case 3:
+            cout << "Streda" << endl;
+            break;
+        case 4:
+            cout << "Ctvrtek" << endl;
+            break;
+        case 5:
+            cout << "Patek" << endl;
+            break;
+        case 6:
+            cout << "Sobota" << endl;
+            break;
+        case 7:
+            cout << "Nedele" << endl;
+            break;
+        default:
+            cout << "Neplatny den!" << endl;
+            break;
+    }
+
+    return 0;
+}

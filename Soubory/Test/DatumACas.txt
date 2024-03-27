@@ -1,0 +1,10 @@
+ DateTime ted = DateTime.XXX;
+        Console.WriteLine("Aktuální datum a čas: " + now);
+
+        // Vytvoření vlastního objektu DateTime
+        DateTime customDateTime = new DateTime(2023, 12, 31, 23, 59, 59);
+        Console.WriteLine("Vlastní datum a čas: " + customDateTime);
+
+        // Získání pouze data nebo času z DateTime objektu
+        Console.WriteLine("Pouze datum: " + now.Date);
+        Console.WriteLine("Pouze čas: " + now.TimeOfDay);

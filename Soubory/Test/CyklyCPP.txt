@@ -1,0 +1,10 @@
+
+int main() {
+    // Vypíše čísla od 1 do 10
+    XXX (int i = 1; i <= X2X; ++i) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    return 0;
+}

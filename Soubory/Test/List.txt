@@ -1,0 +1,4 @@
+ListXXX numbers = new List<int>();
+
+            // Přidání prvků do seznamu
+            numbers.X2X(10);

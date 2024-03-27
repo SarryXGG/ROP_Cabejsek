@@ -1,0 +1,4 @@
+        private void MainForm_Load(XXX sender, EventArgs e)
+        {
+            MessageBox.Show("Formulář byl načten!");
+        }
